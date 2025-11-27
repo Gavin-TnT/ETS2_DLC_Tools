@@ -20,22 +20,8 @@
 ## 🚀 快速开始
 
 ### 系统要求
-- Python 3.8+
 - Windows/Linux/macOS
 - 欧洲卡车模拟2游戏（可选，用于DLC管理）
-
-### 安装运行
-```bash
-# 克隆项目
-git clone <项目地址>
-cd ETS2_DLC_Tools
-
-# 安装依赖
-pip install -r requirements.txt
-
-# 运行应用
-python main.py
-```
 
 ## 📋 使用说明
 
@@ -66,53 +52,12 @@ python main.py
 - **配置管理**：JSON配置文件
 - **文件操作**：标准库shutil和os
 
-### 项目结构
-```
-ETS2_DLC_Tools/
-├── main.py                 # 应用程序入口
-├── ui/
-│   └── MainWindow.py      # 主窗口界面
-├── config.py              # 配置管理
-├── utils.py               # 工具函数
-├── config.json            # 配置文件
-├── requirements.txt       # 项目依赖
-└── logs/                  # 日志文件
-```
-
 ### 核心组件
 - **MainWindow**：主窗口类，管理整个应用程序界面
 - **页面管理**：堆栈式页面切换（已安装/未安装/设置）
 - **DLC管理器**：文件移动、列表更新、状态检查
 - **配置系统**：游戏路径存储、界面设置保存
 
-## 🔧 开发指南
-
-### 环境搭建
-```bash
-# 创建虚拟环境
-python -m venv venv
-
-# 激活环境
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
-source venv/bin/activate
-
-# 安装开发依赖
-pip install -r requirements.txt
-```
-
-### 代码规范
-- 使用Python类型提示
-- 遵循PEP 8代码风格
-- 添加适当的注释和文档字符串
-- 使用logging模块记录操作日志
-
-### 添加新功能
-1. 在MainWindow.py中添加新的页面方法
-2. 在导航栏添加对应的按钮
-3. 实现页面切换逻辑
-4. 添加必要的信号槽连接
 
 ## 📝 注意事项
 
@@ -149,12 +94,6 @@ pip install -r requirements.txt
 ## 📄 许可证
 
 本项目采用MIT许可证 - 详见LICENSE文件
-
-## 🙏 致谢
-
-- 欧洲卡车模拟2开发团队
-- PyQt6框架贡献者
-- 开源社区的支持
 
 ---
 
