@@ -85,7 +85,20 @@ class MainWindow(QMainWindow):
         """设置窗口图标"""
         icon_path = Path(__file__).parent.parent / "resources" / "icon.ico"
         if icon_path.exists():
-            self.setWindowIcon(QIcon(str(icon_path)))
+            try:
+                icon = QIcon(str(icon_path))
+                if not icon.isNull():
+                    self.setWindowIcon(icon)
+                    # 同时设置任务栏图标
+                    from PyQt6.QtWidgets import QApplication
+                    QApplication.instance().setWindowIcon(icon)
+                    self.logger.info(f"窗口图标设置成功: {icon_path}")
+                else:
+                    self.logger.warning(f"图标文件无效: {icon_path}")
+            except Exception as e:
+                self.logger.error(f"设置窗口图标失败: {e}")
+        else:
+            self.logger.warning(f"图标文件不存在: {icon_path}")
     
     def create_left_panel(self):
         """创建左侧菜单栏 - 高度占满100%，带阴影效果"""
