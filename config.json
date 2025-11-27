@@ -17,9 +17,15 @@
         "max_size": 1048576,
         "backup_count": 5
     },
+    "dlc": {
+        "game_path": "",
+        "mods_path": "",
+        "backup_path": "backups",
+        "auto_backup": true
+    },
     "ui": {
         "theme": "light",
-        "language": "zh_CN",
+        "language": "en",
         "font_size": 12,
         "show_toolbar": true,
         "show_statusbar": true
