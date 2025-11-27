@@ -17,16 +17,13 @@ if sys.platform == "win32":
 # 项目根目录
 project_root = Path(__file__).parent
 
-# 需要包含的文件和目录
+# 需要包含的文件和目录（仅必需文件）
 include_files = [
-    "config.json",
-    "dlcs_info.json",
-    "config.py",
-    "utils.py",
-    "ui/",
-    "logs/",
-    "README.md",
-    "requirements.txt"
+    "config.json",           # 配置文件 - 必需
+    "dlcs_info.json",        # DLC数据文件 - 必需
+    "ui/",                   # 界面文件 - 必需
+    "logs/",                 # 日志目录 - 必需
+    "resources/"             # 资源文件（图标等）- 必需
 ]
 
 # 需要包含的Python包
@@ -47,7 +44,7 @@ packages = [
 # 排除不需要的包
 excludes = [
     "tkinter",
-    "matplotlib",
+    "matplotlib", 
     "numpy",
     "pandas",
     "scipy",
@@ -57,6 +54,9 @@ excludes = [
     "pydoc",
     "doctest"
 ]
+
+# 排除不需要的文件（使用include_files的负向排除）
+# 注意：启动程序.bat和使用说明.txt不应出现在include_files中
 
 # 构建选项
 build_exe_options = {
@@ -73,7 +73,7 @@ executables = [
         script="main.py",
         base=base,
         target_name="ETS2_DLC_Tools.exe",
-        icon=None,  # 可以添加图标文件路径
+        icon="resources/icon.ico",  # 图标文件路径
         copyright="Copyright (C) 2024 ETS2 DLC Tools",
         trademarks="ETS2 DLC Tools",
         shortcut_name="ETS2 DLC Tools",

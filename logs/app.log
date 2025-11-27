@@ -814,3 +814,31 @@
 2025-11-27 17:15:36,861 - ui.MainWindow - INFO - 显示已安装DLC
 2025-11-27 17:15:36,862 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
 2025-11-27 17:15:37,696 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 17:56:38,660 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:56:38,677 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:56:38,678 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:56:38,679 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:56:38,681 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:56:39,123 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:56:40,073 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:56:40,073 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:56:40,074 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:56:40,334 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:56:40,334 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:56:40,335 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:56:40,906 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:56:41,073 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:56:41,074 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:56:41,074 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:56:41,321 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:56:41,323 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:56:41,601 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:56:41,602 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:56:41,602 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:56:41,973 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:56:42,174 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:56:42,175 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:56:42,175 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:56:42,380 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:56:42,381 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:56:43,145 - ui.MainWindow - INFO - 应用程序正在关闭...

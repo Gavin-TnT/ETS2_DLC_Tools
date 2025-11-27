@@ -103,30 +103,33 @@ def create_distribution():
         
         shutil.copytree(build_dir, dist_dir)
         
-        # 创建启动脚本
-        start_script = dist_dir / "启动程序.bat"
-        start_script.write_text("@echo off\nstart ETS2_DLC_Tools.exe\n", encoding="utf-8")
+        # 注意：根据用户需求，移除了启动脚本和说明文件的生成
+        # 如果需要这些文件，可以取消下面的注释
         
-        # 创建说明文件
-        readme = dist_dir / "使用说明.txt"
-        readme.write_text("""ETS2 DLC Tools - 使用说明
+        # 创建启动脚本（已注释掉）
+        # start_script = dist_dir / "启动程序.bat"
+        # start_script.write_text("@echo off\nstart ETS2_DLC_Tools.exe\n", encoding="utf-8")
+        
+        # 创建说明文件（已注释掉）
+        # readme = dist_dir / "使用说明.txt"
+        # readme.write_text("""ETS2 DLC Tools - 使用说明
 
-1. 双击 ETS2_DLC_Tools.exe 启动程序
-2. 或者双击 启动程序.bat 启动程序
+# 1. 双击 ETS2_DLC_Tools.exe 启动程序
+# 2. 或者双击 启动程序.bat 启动程序
 
-功能说明：
-- 已安装DLC：查看和管理已安装的DLC文件
-- 未安装DLC：查看和管理未安装的DLC文件
-- 设置：配置游戏安装路径
+# 功能说明：
+# - 已安装DLC：查看和管理已安装的DLC文件
+# - 未安装DLC：查看和管理未安装的DLC文件
+# - 设置：配置游戏安装路径
 
-注意事项：
-- 程序会自动检测ETS2游戏安装路径
-- DLC文件会被移动到temp_dlcs文件夹而不是删除
-- 支持批量选择和操作
+# 注意事项：
+# - 程序会自动检测ETS2游戏安装路径
+# - DLC文件会被移动到temp_dlcs文件夹而不是删除
+# - 支持批量选择和操作
 
-技术支持：
-如有问题，请查看README.md文件
-""", encoding="utf-8")
+# 技术支持：
+# 如有问题，请查看README.md文件
+# """, encoding="utf-8")
         
         print(f"分发版本已创建: {dist_dir}")
         return True
