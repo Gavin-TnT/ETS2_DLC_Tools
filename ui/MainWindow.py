@@ -83,7 +83,7 @@ class MainWindow(QMainWindow):
     
     def set_window_icon(self):
         """设置窗口图标"""
-        icon_path = Path(__file__).parent.parent / "resources" / "icon.png"
+        icon_path = Path(__file__).parent.parent / "resources" / "icon.ico"
         if icon_path.exists():
             self.setWindowIcon(QIcon(str(icon_path)))
     

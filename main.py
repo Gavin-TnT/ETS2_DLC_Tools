@@ -42,7 +42,7 @@ def main():
     app.setOrganizationName("ETS2DLCTools")
     
     # 设置应用程序图标（如果存在）
-    icon_path = project_root / "resources" / "icon.png"
+    icon_path = project_root / "resources" / "icon.ico"
     if icon_path.exists():
         app.setWindowIcon(QIcon(str(icon_path)))
     
