@@ -9,12 +9,14 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QTextEdit, QPushButton, QLabel, QLineEdit,
                              QTreeWidget, QTreeWidgetItem, QSplitter,
                              QMessageBox, QFileDialog, QApplication, QToolButton,
-                             QFrame, QScrollArea, QGraphicsDropShadowEffect, QSizePolicy)
+                             QFrame, QScrollArea, QGraphicsDropShadowEffect, QSizePolicy,
+                             QListWidget, QListWidgetItem)
 from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QSize
 from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap
 
 import os
 import logging
+import shutil
 from pathlib import Path
 
 
@@ -28,6 +30,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.config = config or {}
         self.logger = logging.getLogger(__name__)
+        
+        # 初始化游戏路径 - 只通过自动检测获取，不从配置读取
+        self.game_path = self.find_ets2_installation_path()
         
         # 初始化UI
         self.init_ui()
@@ -238,10 +243,6 @@ class MainWindow(QMainWindow):
     
     def create_content_pages(self):
         """创建不同菜单对应的内容页面"""
-        # 默认页面（欢迎页面）
-        self.welcome_page = self.create_welcome_page()
-        self.stack_layout.addWidget(self.welcome_page)
-        
         # 已安装DLC页面
         self.installed_page = self.create_installed_page()
         self.stack_layout.addWidget(self.installed_page)
@@ -254,38 +255,10 @@ class MainWindow(QMainWindow):
         self.settings_page = self.create_settings_page()
         self.stack_layout.addWidget(self.settings_page)
         
-        # 默认显示欢迎页面
-        self.show_page(self.welcome_page)
+        # 默认显示已安装DLC页面
+        self.show_installed_dlc()
     
-    def create_welcome_page(self):
-        """创建欢迎页面"""
-        page = QWidget()
-        page.setObjectName("welcome_page")
-        layout = QVBoxLayout(page)
-        
-        # 标题
-        title = QLabel("欢迎使用 ETS2 DLC Tools")
-        title.setObjectName("page_title")
-        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        layout.addWidget(title)
-        
-        # 副标题
-        subtitle = QLabel("欧洲卡车模拟2 DLC管理工具")
-        subtitle.setObjectName("page_subtitle")
-        subtitle.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        layout.addWidget(subtitle)
-        
-        layout.addStretch()
-        
-        # 功能介绍
-        features = QLabel("主要功能：\n• 管理已安装DLC\n• 查看未安装DLC\n• 备份和恢复配置\n• 快速切换DLC状态")
-        features.setObjectName("page_features")
-        features.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        layout.addWidget(features)
-        
-        layout.addStretch()
-        
-        return page
+
     
     def create_installed_page(self):
         """创建已安装DLC页面"""
@@ -298,7 +271,7 @@ class MainWindow(QMainWindow):
         header.setObjectName("page_header")
         header_layout = QHBoxLayout(header)
         
-        title = QLabel("已安装DLC管理")
+        title = QLabel("已安装DLC列表")
         title.setObjectName("page_title")
         header_layout.addWidget(title)
         
@@ -312,21 +285,31 @@ class MainWindow(QMainWindow):
         
         layout.addWidget(header)
         
-        # 内容区域
-        content = QTextEdit()
-        content.setObjectName("content_area")
-        content.setPlainText("这里显示已安装的DLC列表...")
-        content.setReadOnly(True)
-        layout.addWidget(content)
+        # DLC文件列表 - 使用QListWidget
+        dlc_list = QListWidget()
+        dlc_list.setObjectName("installed_dlc_list")
+        dlc_list.setSelectionMode(QListWidget.SelectionMode.ExtendedSelection)  # 允许多选
+        layout.addWidget(dlc_list)
+        
+        # 保存列表引用，用于后续更新
+        page.dlc_list = dlc_list
         
         # 操作按钮
         actions = QWidget()
         actions.setObjectName("page_actions")
         actions_layout = QHBoxLayout(actions)
         
-        disable_btn = QPushButton("禁用选中DLC")
-        disable_btn.clicked.connect(self.disable_selected_dlc)
-        actions_layout.addWidget(disable_btn)
+        # 卸载选中DLC按钮
+        self.uninstall_selected_btn = QPushButton("卸载选中DLC")
+        self.uninstall_selected_btn.clicked.connect(self.uninstall_selected_dlcs)
+        self.uninstall_selected_btn.setVisible(False)
+        actions_layout.addWidget(self.uninstall_selected_btn)
+        
+        # 卸载所有DLC按钮（初始隐藏）
+        self.uninstall_all_btn = QPushButton("卸载所有DLC")
+        self.uninstall_all_btn.clicked.connect(self.uninstall_all_dlcs)
+        self.uninstall_all_btn.setVisible(False)
+        actions_layout.addWidget(self.uninstall_all_btn)
         
         actions_layout.addStretch()
         
@@ -359,12 +342,14 @@ class MainWindow(QMainWindow):
         
         layout.addWidget(header)
         
-        # 内容区域
-        content = QTextEdit()
-        content.setObjectName("content_area")
-        content.setPlainText("这里显示未安装的DLC列表...")
-        content.setReadOnly(True)
-        layout.addWidget(content)
+        # DLC文件列表 - 使用QListWidget
+        dlc_list = QListWidget()
+        dlc_list.setObjectName("dlc_list")
+        dlc_list.setSelectionMode(QListWidget.SelectionMode.ExtendedSelection)  # 允许多选
+        layout.addWidget(dlc_list)
+        
+        # 保存列表引用，用于后续更新
+        page.dlc_list = dlc_list
         
         # 操作按钮
         actions = QWidget()
@@ -374,6 +359,10 @@ class MainWindow(QMainWindow):
         install_btn = QPushButton("安装选中DLC")
         install_btn.clicked.connect(self.install_selected_dlc)
         actions_layout.addWidget(install_btn)
+        
+        install_all_btn = QPushButton("安装所有DLC")
+        install_all_btn.clicked.connect(self.install_all_dlcs)
+        actions_layout.addWidget(install_all_btn)
         
         actions_layout.addStretch()
         
@@ -457,7 +446,6 @@ class MainWindow(QMainWindow):
     def show_page(self, page_widget):
         """显示指定页面，隐藏其他页面"""
         # 隐藏所有页面
-        self.welcome_page.hide()
         self.installed_page.hide()
         self.uninstalled_page.hide()
         self.settings_page.hide()
@@ -594,6 +582,23 @@ class MainWindow(QMainWindow):
                 color: #212529;
             }
             
+            /* 游戏路径信息区域 */
+            QWidget#path_info {
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            
+            QLabel#path_label {
+                font-weight: bold;
+                color: #495057;
+                min-width: 100px;
+            }
+            
+
+            
             /* 页面操作按钮区域 */
             QWidget#page_actions {
                 border-top: 1px solid #e9ecef;
@@ -671,16 +676,22 @@ class MainWindow(QMainWindow):
         self.logger.info("保存文件功能")
     
     def show_installed_dlc(self):
-        """显示已安装的DLC - 动态切换内容"""
+        """显示已安装DLC"""
         self.update_nav_button_state(self.installed_btn)
         self.show_page(self.installed_page)
         self.logger.info("显示已安装DLC")
+        
+        # 检查DLC文件
+        self.check_and_display_dlcs()
     
     def show_uninstalled_dlc(self):
         """显示未安装的DLC - 动态切换内容"""
         self.update_nav_button_state(self.uninstalled_btn)
         self.show_page(self.uninstalled_page)
         self.logger.info("显示未安装DLC")
+        
+        # 自动刷新未安装DLC列表
+        self.refresh_uninstalled_dlc()
     
     def update_nav_button_state(self, active_button):
         """更新导航按钮状态"""
@@ -696,7 +707,202 @@ class MainWindow(QMainWindow):
     def refresh_installed_dlc(self):
         """刷新已安装DLC列表"""
         self.logger.info("刷新已安装DLC列表")
-        # 这里添加实际的刷新逻辑
+        # 重新检查DLC文件
+        self.check_and_display_dlcs()
+    
+    def check_and_display_dlcs(self):
+        """检查DLC文件并显示相应信息"""
+        try:
+            # 优先从设置界面的输入框获取路径，若为空则尝试从config读取
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                self.installed_page.content_area.setPlainText("未找到游戏安装路径")
+                self.uninstall_all_btn.setVisible(False)
+                return
+            
+            # 查找以dlc开头，后缀为.scs的文件
+            dlc_files = []
+            for file in os.listdir(game_path):
+                if file.lower().startswith("dlc") and file.lower().endswith(".scs"):
+                    dlc_files.append(file)
+            
+            # 清空列表并重新填充
+            self.installed_page.dlc_list.clear()
+            
+            if dlc_files:
+                # 按名称排序并添加到列表
+                for file in sorted(dlc_files):
+                    item = QListWidgetItem(file)
+                    item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名到item数据中
+                    self.installed_page.dlc_list.addItem(item)
+                
+                self.uninstall_selected_btn.setVisible(True)
+                self.uninstall_all_btn.setVisible(True)
+                self.logger.info(f"在 {game_path} 中找到 {len(dlc_files)} 个DLC文件")
+            else:
+                # 未找到DLC文件
+                item = QListWidgetItem("未找到DLC文件")
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)  # 禁用该项
+                self.installed_page.dlc_list.addItem(item)
+                self.uninstall_selected_btn.setVisible(False)
+                self.uninstall_all_btn.setVisible(False)
+                self.logger.info(f"在 {game_path} 中未找到DLC文件")
+                
+        except Exception as e:
+            self.installed_page.dlc_list.clear()
+            error_item = QListWidgetItem(f"检查DLC文件时出错: {str(e)}")
+            error_item.setFlags(error_item.flags() & ~Qt.ItemFlag.ItemIsEnabled)
+            self.installed_page.dlc_list.addItem(error_item)
+            self.uninstall_selected_btn.setVisible(False)
+            self.uninstall_all_btn.setVisible(False)
+            self.logger.error(f"检查DLC文件时出错: {e}")
+    
+    def uninstall_all_dlcs(self):
+        """卸载所有DLC"""
+        try:
+            # 优先从设置界面的输入框获取路径，若为空则尝试从config读取
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                QMessageBox.warning(self, "警告", "未找到游戏安装路径")
+                return
+            
+            # 创建temp_dlcs文件夹
+            temp_dir = os.path.join(game_path, "temp_dlcs")
+            if not os.path.exists(temp_dir):
+                os.makedirs(temp_dir)
+                self.logger.info(f"创建临时DLC文件夹: {temp_dir}")
+            
+            # 查找所有DLC文件
+            dlc_files = []
+            for file in os.listdir(game_path):
+                if file.lower().startswith("dlc") and file.lower().endswith(".scs"):
+                    dlc_files.append(file)
+            
+            if not dlc_files:
+                QMessageBox.information(self, "提示", "未找到DLC文件")
+                return
+            
+            # 确认对话框
+            reply = QMessageBox.question(
+                self, "确认卸载", 
+                f"确定要卸载 {len(dlc_files)} 个DLC文件吗？\n文件将被移动到: {temp_dir}",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                moved_files = []
+                for dlc_file in dlc_files:
+                    src_path = os.path.join(game_path, dlc_file)
+                    dst_path = os.path.join(temp_dir, dlc_file)
+                    
+                    try:
+                        shutil.move(src_path, dst_path)
+                        moved_files.append(dlc_file)
+                        self.logger.info(f"移动DLC文件: {dlc_file} -> {temp_dir}")
+                    except Exception as e:
+                        self.logger.error(f"移动文件 {dlc_file} 失败: {e}")
+                
+                if moved_files:
+                    QMessageBox.information(
+                        self, "成功", 
+                        f"已成功卸载 {len(moved_files)} 个DLC文件"
+                    )
+                    # 重新检查并更新显示
+                    self.check_and_display_dlcs()
+                else:
+                    QMessageBox.warning(self, "警告", "没有文件被移动")
+                    
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"卸载DLC时出错: {str(e)}")
+            self.logger.error(f"卸载DLC时出错: {e}")
+    
+    def uninstall_selected_dlcs(self):
+        """卸载选中的DLC - 将游戏安装路径中选中的DLC文件移动到temp_dlcs文件夹"""
+        self.logger.info("卸载选中的DLC")
+        try:
+            # 获取游戏路径
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                QMessageBox.warning(self, "警告", "未找到游戏安装路径")
+                return
+            
+            # 获取选中的DLC文件
+            selected_items = self.installed_page.dlc_list.selectedItems()
+            if not selected_items:
+                QMessageBox.information(self, "提示", "请先选择要卸载的DLC文件")
+                return
+            
+            # 提取选中的文件名
+            selected_files = []
+            for item in selected_items:
+                file_name = item.data(Qt.ItemDataRole.UserRole)
+                if file_name:
+                    selected_files.append(file_name)
+            
+            if not selected_files:
+                QMessageBox.information(self, "提示", "未找到有效的DLC文件")
+                return
+            
+            # 创建temp_dlcs文件夹
+            temp_dir = os.path.join(game_path, "temp_dlcs")
+            if not os.path.exists(temp_dir):
+                os.makedirs(temp_dir)
+                self.logger.info(f"创建temp_dlcs文件夹: {temp_dir}")
+            
+            # 确认对话框
+            reply = QMessageBox.question(
+                self, "确认卸载", 
+                f"确定要卸载 {len(selected_files)} 个选中的DLC文件吗？\n文件将被移动到 {temp_dir} 文件夹",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                moved_files = []
+                for dlc_file in selected_files:
+                    src_path = os.path.join(game_path, dlc_file)
+                    dst_path = os.path.join(temp_dir, dlc_file)
+                    
+                    try:
+                        # 检查源文件是否存在
+                        if not os.path.exists(src_path):
+                            self.logger.warning(f"源文件不存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 检查目标文件是否已存在
+                        if os.path.exists(dst_path):
+                            self.logger.warning(f"目标文件已存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 移动文件（剪切操作）
+                        shutil.move(src_path, dst_path)
+                        moved_files.append(dlc_file)
+                        self.logger.info(f"移动DLC文件: {dlc_file} -> {temp_dir}")
+                    except Exception as e:
+                        self.logger.error(f"移动文件 {dlc_file} 失败: {e}")
+                
+                if moved_files:
+                    QMessageBox.information(
+                        self, "成功", 
+                        f"已成功卸载 {len(moved_files)} 个DLC文件"
+                    )
+                    # 重新检查并更新显示
+                    self.check_and_display_dlcs()
+                    # 同时刷新未安装DLC列表
+                    self.refresh_uninstalled_dlc()
+                else:
+                    QMessageBox.warning(self, "警告", "没有文件被移动，可能目标位置已存在相同文件或源文件不存在")
+                    
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"卸载DLC时出错: {str(e)}")
+            self.logger.error(f"卸载DLC时出错: {e}")
     
     def disable_selected_dlc(self):
         """禁用选中的DLC"""
@@ -706,12 +912,210 @@ class MainWindow(QMainWindow):
     def refresh_uninstalled_dlc(self):
         """刷新未安装DLC列表"""
         self.logger.info("刷新未安装DLC列表")
-        # 这里添加实际的刷新逻辑
+        try:
+            # 获取游戏路径
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                self.uninstalled_page.dlc_list.clear()
+                return
+            
+            # 检查temp_dlcs文件夹
+            temp_dir = os.path.join(game_path, "temp_dlcs")
+            if not os.path.exists(temp_dir):
+                self.uninstalled_page.dlc_list.clear()
+                return
+            
+            # 查找temp_dlcs文件夹中的DLC文件
+            dlc_files = []
+            for file in os.listdir(temp_dir):
+                if file.lower().startswith("dlc") and file.lower().endswith(".scs"):
+                    dlc_files.append(file)
+            
+            # 清空列表并重新填充
+            self.uninstalled_page.dlc_list.clear()
+            
+            if dlc_files:
+                # 按名称排序并添加到列表
+                for file in sorted(dlc_files):
+                    item = QListWidgetItem(file)
+                    item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名到item数据中
+                    self.uninstalled_page.dlc_list.addItem(item)
+                
+                self.logger.info(f"在 {temp_dir} 中找到 {len(dlc_files)} 个已卸载的DLC文件")
+            else:
+                # 未找到DLC文件
+                item = QListWidgetItem("temp_dlcs文件夹中没有找到DLC文件")
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)  # 禁用该项
+                self.uninstalled_page.dlc_list.addItem(item)
+                self.logger.info(f"在 {temp_dir} 中未找到DLC文件")
+                
+        except Exception as e:
+            self.uninstalled_page.dlc_list.clear()
+            error_item = QListWidgetItem(f"检查已卸载DLC文件时出错: {str(e)}")
+            error_item.setFlags(error_item.flags() & ~Qt.ItemFlag.ItemIsEnabled)
+            self.uninstalled_page.dlc_list.addItem(error_item)
+            self.logger.error(f"检查已卸载DLC文件时出错: {e}")
     
     def install_selected_dlc(self):
-        """安装选中的DLC"""
+        """安装选中的DLC - 将temp_dlcs文件夹中选中的DLC文件移回游戏安装路径"""
         self.logger.info("安装选中的DLC")
-        # 这里添加实际的安装逻辑
+        try:
+            # 获取游戏路径
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                QMessageBox.warning(self, "警告", "未找到游戏安装路径")
+                return
+            
+            # 检查temp_dlcs文件夹
+            temp_dir = os.path.join(game_path, "temp_dlcs")
+            if not os.path.exists(temp_dir):
+                QMessageBox.information(self, "提示", "未找到temp_dlcs文件夹，没有可安装的DLC")
+                return
+            
+            # 获取选中的DLC文件
+            selected_items = self.uninstalled_page.dlc_list.selectedItems()
+            if not selected_items:
+                QMessageBox.information(self, "提示", "请先选择要安装的DLC文件")
+                return
+            
+            # 提取选中的文件名
+            selected_files = []
+            for item in selected_items:
+                file_name = item.data(Qt.ItemDataRole.UserRole)
+                if file_name:
+                    selected_files.append(file_name)
+            
+            if not selected_files:
+                QMessageBox.information(self, "提示", "未找到有效的DLC文件")
+                return
+            
+            # 确认对话框
+            reply = QMessageBox.question(
+                self, "确认安装", 
+                f"确定要安装 {len(selected_files)} 个选中的DLC文件吗？\n文件将从 {temp_dir} 移回游戏安装路径",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                moved_files = []
+                for dlc_file in selected_files:
+                    src_path = os.path.join(temp_dir, dlc_file)
+                    dst_path = os.path.join(game_path, dlc_file)
+                    
+                    try:
+                        # 检查源文件是否存在
+                        if not os.path.exists(src_path):
+                            self.logger.warning(f"源文件不存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 检查目标文件是否已存在
+                        if os.path.exists(dst_path):
+                            self.logger.warning(f"目标文件已存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 移动文件（剪切操作）
+                        shutil.move(src_path, dst_path)
+                        moved_files.append(dlc_file)
+                        self.logger.info(f"移动DLC文件: {dlc_file} -> {game_path}")
+                    except Exception as e:
+                        self.logger.error(f"移动文件 {dlc_file} 失败: {e}")
+                
+                if moved_files:
+                    QMessageBox.information(
+                        self, "成功", 
+                        f"已成功安装 {len(moved_files)} 个DLC文件"
+                    )
+                    # 重新检查并更新显示
+                    self.refresh_uninstalled_dlc()
+                    # 同时刷新已安装DLC列表
+                    self.check_and_display_dlcs()
+                else:
+                    QMessageBox.warning(self, "警告", "没有文件被移动，可能目标位置已存在相同文件或源文件不存在")
+                    
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"安装DLC时出错: {str(e)}")
+            self.logger.error(f"安装DLC时出错: {e}")
+    
+    def install_all_dlcs(self):
+        """安装所有DLC - 将temp_dlcs文件夹中的所有DLC文件移回游戏安装路径"""
+        self.logger.info("安装所有DLC")
+        try:
+            # 获取游戏路径
+            game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
+                self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
+            )
+            if not game_path or not os.path.exists(game_path):
+                QMessageBox.warning(self, "警告", "未找到游戏安装路径")
+                return
+            
+            # 检查temp_dlcs文件夹
+            temp_dir = os.path.join(game_path, "temp_dlcs")
+            if not os.path.exists(temp_dir):
+                QMessageBox.information(self, "提示", "未找到temp_dlcs文件夹，没有可安装的DLC")
+                return
+            
+            # 查找temp_dlcs文件夹中的所有DLC文件
+            dlc_files = []
+            for file in os.listdir(temp_dir):
+                if file.lower().startswith("dlc") and file.lower().endswith(".scs"):
+                    dlc_files.append(file)
+            
+            if not dlc_files:
+                QMessageBox.information(self, "提示", "temp_dlcs文件夹中没有找到DLC文件")
+                return
+            
+            # 确认对话框
+            reply = QMessageBox.question(
+                self, "确认安装", 
+                f"确定要安装所有 {len(dlc_files)} 个DLC文件吗？\n文件将从 {temp_dir} 移回游戏安装路径",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No
+            )
+            
+            if reply == QMessageBox.StandardButton.Yes:
+                moved_files = []
+                for dlc_file in dlc_files:
+                    src_path = os.path.join(temp_dir, dlc_file)
+                    dst_path = os.path.join(game_path, dlc_file)
+                    
+                    try:
+                        # 检查源文件是否存在
+                        if not os.path.exists(src_path):
+                            self.logger.warning(f"源文件不存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 检查目标文件是否已存在
+                        if os.path.exists(dst_path):
+                            self.logger.warning(f"目标文件已存在，跳过: {dlc_file}")
+                            continue
+                        
+                        # 移动文件（剪切操作）
+                        shutil.move(src_path, dst_path)
+                        moved_files.append(dlc_file)
+                        self.logger.info(f"移动DLC文件: {dlc_file} -> {game_path}")
+                    except Exception as e:
+                        self.logger.error(f"移动文件 {dlc_file} 失败: {e}")
+                
+                if moved_files:
+                    QMessageBox.information(
+                        self, "成功", 
+                        f"已成功安装 {len(moved_files)} 个DLC文件"
+                    )
+                    # 重新检查并更新显示
+                    self.refresh_uninstalled_dlc()
+                    # 同时刷新已安装DLC列表
+                    self.check_and_display_dlcs()
+                else:
+                    QMessageBox.warning(self, "警告", "没有文件被移动，可能目标位置已存在相同文件或源文件不存在")
+                    
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"安装DLC时出错: {str(e)}")
+            self.logger.error(f"安装DLC时出错: {e}")
     
     def browse_game_path(self):
         """浏览欧洲卡车模拟2游戏路径"""
