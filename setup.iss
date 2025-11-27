@@ -3,7 +3,7 @@
 ; 仅供非商业使用
 
 #define MyAppName "ETS2 DLC Tools"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1.1"
 #define MyAppPublisher "TENGZE"
 #define MyAppExeName "ETS2_DLC_Tools.exe"
 #define MyAppAssocName MyAppName + ""

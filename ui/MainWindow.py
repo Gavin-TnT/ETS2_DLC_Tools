@@ -15,6 +15,7 @@ from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QSize, QUrl
 from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap, QDesktopServices
 
 import os
+import sys
 import logging
 import shutil
 from pathlib import Path
@@ -91,7 +92,15 @@ class MainWindow(QMainWindow):
     
     def set_window_icon(self):
         """设置窗口图标"""
-        icon_path = Path(__file__).parent.parent / "resources" / "icon.ico"
+        # 检测是否在打包环境中运行
+        if getattr(sys, 'frozen', False):
+            # 打包后的环境 - 使用可执行文件所在目录
+            base_path = Path(sys.executable).parent
+        else:
+            # 开发环境 - 使用当前文件所在目录
+            base_path = Path(__file__).parent.parent
+        
+        icon_path = base_path / "resources" / "icon.ico"
         if icon_path.exists():
             try:
                 icon = QIcon(str(icon_path))
@@ -289,7 +298,15 @@ class MainWindow(QMainWindow):
         github_btn.setToolTip("访问GitHub仓库")
         
         # GitHub图标文件路径
-        github_icon_path = Path(__file__).parent.parent / "resources" / "github_icon.png"
+        # 检测是否在打包环境中运行
+        if getattr(sys, 'frozen', False):
+            # 打包后的环境 - 使用可执行文件所在目录
+            base_path = Path(sys.executable).parent
+        else:
+            # 开发环境 - 使用当前文件所在目录
+            base_path = Path(__file__).parent.parent
+        
+        github_icon_path = base_path / "resources" / "github_icon.png"
         
         if github_icon_path.exists():
             try:
@@ -428,7 +445,15 @@ class MainWindow(QMainWindow):
     def open_logs_folder(self):
         """打开日志文件夹"""
         try:
-            logs_path = Path(__file__).parent.parent / "logs"
+            # 检测是否在打包环境中运行
+            if getattr(sys, 'frozen', False):
+                # 打包后的环境 - 使用可执行文件所在目录
+                base_path = Path(sys.executable).parent
+            else:
+                # 开发环境 - 使用当前文件所在目录
+                base_path = Path(__file__).parent.parent
+            
+            logs_path = base_path / "logs"
             if logs_path.exists():
                 # 使用系统默认文件管理器打开文件夹
                 QDesktopServices.openUrl(QUrl.fromLocalFile(str(logs_path)))
@@ -538,13 +563,13 @@ class MainWindow(QMainWindow):
         actions.setObjectName("page_actions")
         actions_layout = QHBoxLayout(actions)
         
-        install_btn = QPushButton(tr('uninstalled.install_selected'))
-        install_btn.clicked.connect(self.install_selected_dlc)
-        actions_layout.addWidget(install_btn)
+        self.install_selected_btn = QPushButton(tr('uninstalled.install_selected'))
+        self.install_selected_btn.clicked.connect(self.install_selected_dlc)
+        actions_layout.addWidget(self.install_selected_btn)
         
-        install_all_btn = QPushButton(tr('uninstalled.install_all'))
-        install_all_btn.clicked.connect(self.install_all_dlcs)
-        actions_layout.addWidget(install_all_btn)
+        self.install_all_btn = QPushButton(tr('uninstalled.install_all'))
+        self.install_all_btn.clicked.connect(self.install_all_dlcs)
+        actions_layout.addWidget(self.install_all_btn)
         
         actions_layout.addStretch()
         
@@ -597,8 +622,8 @@ class MainWindow(QMainWindow):
         
         # 欧洲卡车模拟2游戏路径
         game_path_layout = QHBoxLayout()
-        game_path_label = QLabel(tr('settings.game_path'))
-        game_path_layout.addWidget(game_path_label)
+        self.game_path_label = QLabel(tr('settings.game_path'))
+        game_path_layout.addWidget(self.game_path_label)
         
         self.game_path_input = QLineEdit()
         self.game_path_input.setPlaceholderText("请选择欧洲卡车模拟2的安装路径...")
@@ -612,9 +637,9 @@ class MainWindow(QMainWindow):
         
         game_path_layout.addWidget(self.game_path_input)
         
-        game_browse_btn = QPushButton(tr('settings.browse'))
-        game_browse_btn.clicked.connect(self.browse_game_path)
-        game_path_layout.addWidget(game_browse_btn)
+        self.game_browse_btn = QPushButton(tr('settings.browse'))
+        self.game_browse_btn.clicked.connect(self.browse_game_path)
+        game_path_layout.addWidget(self.game_browse_btn)
         
         settings_layout.addLayout(game_path_layout)
         
@@ -626,8 +651,8 @@ class MainWindow(QMainWindow):
         
         # 语言设置
         language_layout = QHBoxLayout()
-        language_label = QLabel(tr('settings.language'))
-        language_label.setStyleSheet("""
+        self.language_label = QLabel(tr('settings.language'))
+        self.language_label.setStyleSheet("""
             QLabel {
                 font-size: 14px;
                 font-weight: 600;
@@ -637,7 +662,7 @@ class MainWindow(QMainWindow):
                 background-color: transparent;
             }
         """)
-        language_layout.addWidget(language_label)
+        language_layout.addWidget(self.language_label)
         
         self.language_combo = QComboBox()
         self.language_combo.addItems(["中文", "English"])
@@ -724,10 +749,10 @@ class MainWindow(QMainWindow):
         tools_layout.addWidget(separator)
         
         # 打开日志文件夹按钮
-        open_logs_btn = QPushButton(tr('settings.open_logs'))
-        open_logs_btn.setToolTip(tr('settings.open_logs'))
-        open_logs_btn.clicked.connect(self.open_logs_folder)
-        open_logs_btn.setStyleSheet("""
+        self.open_logs_btn = QPushButton(tr('settings.open_logs'))
+        self.open_logs_btn.setToolTip(tr('settings.open_logs'))
+        self.open_logs_btn.clicked.connect(self.open_logs_folder)
+        self.open_logs_btn.setStyleSheet("""
             QPushButton {
                 background-color: #28a745;
                 color: white;
@@ -744,18 +769,18 @@ class MainWindow(QMainWindow):
                 background-color: #1e7e34;
             }
         """)
-        tools_layout.addWidget(open_logs_btn)
+        tools_layout.addWidget(self.open_logs_btn)
         
         # 日志说明标签
-        logs_info_label = QLabel(tr('settings.logs_info'))
-        logs_info_label.setStyleSheet("""
+        self.logs_info_label = QLabel(tr('settings.logs_info'))
+        self.logs_info_label.setStyleSheet("""
             QLabel {
                 color: #6c757d;
                 font-size: 12px;
                 padding: 5px;
             }
         """)
-        tools_layout.addWidget(logs_info_label)
+        tools_layout.addWidget(self.logs_info_label)
         
         # GitHub仓库链接按钮
         github_btn = self.create_github_button_for_settings()
@@ -849,12 +874,10 @@ class MainWindow(QMainWindow):
                 refresh_btn.setText(tr('uninstalled.refresh_list'))
             
             # 更新操作按钮
-            action_buttons = self.uninstalled_page.findChildren(QPushButton)
-            for btn in action_buttons:
-                if btn.text() == "安装选中DLC" or btn.text() == tr('uninstalled.install_selected'):
-                    btn.setText(tr('uninstalled.install_selected'))
-                elif btn.text() == "安装所有DLC" or btn.text() == tr('uninstalled.install_all'):
-                    btn.setText(tr('uninstalled.install_all'))
+            if self.install_selected_btn:
+                self.install_selected_btn.setText(tr('uninstalled.install_selected'))
+            if self.install_all_btn:
+                self.install_all_btn.setText(tr('uninstalled.install_all'))
         
         # 更新设置页面文本
         if hasattr(self, 'settings_page'):
@@ -864,39 +887,28 @@ class MainWindow(QMainWindow):
                 title_label.setText(tr('settings.title'))
             
             # 更新游戏路径标签
-            game_path_labels = self.settings_page.findChildren(QLabel)
-            for label in game_path_labels:
-                if label.text() == "游戏路径:" or label.text() == tr('settings.game_path'):
-                    label.setText(tr('settings.game_path'))
-                    break
+            if hasattr(self, 'game_path_label'):
+                self.game_path_label.setText(tr('settings.game_path'))
             
             # 更新浏览按钮
-            browse_btns = self.settings_page.findChildren(QPushButton)
-            for btn in browse_btns:
-                if btn.text() == "浏览..." or btn.text() == tr('settings.browse'):
-                    btn.setText(tr('settings.browse'))
-                    break
+            if hasattr(self, 'game_browse_btn'):
+                self.game_browse_btn.setText(tr('settings.browse'))
             
             # 更新语言标签
-            for label in game_path_labels:
-                if label.text() == "界面语言:" or label.text() == tr('settings.language'):
-                    label.setText(tr('settings.language'))
-                    break
+            if hasattr(self, 'language_label'):
+                self.language_label.setText(tr('settings.language'))
             
             # 更新日志按钮
-            for btn in browse_btns:
-                if btn.text() == "📁 打开日志文件夹" or btn.text() == tr('settings.open_logs'):
-                    btn.setText(tr('settings.open_logs'))
-                    btn.setToolTip(tr('settings.open_logs'))
-                    break
+            if hasattr(self, 'open_logs_btn'):
+                self.open_logs_btn.setText(tr('settings.open_logs'))
+                self.open_logs_btn.setToolTip(tr('settings.open_logs'))
             
             # 更新日志说明标签
-            for label in game_path_labels:
-                if hasattr(label, 'logs_info') or (label.text() and "日志文件位于" in label.text()):
-                    label.setText(tr('settings.logs_info'))
-                    break
+            if hasattr(self, 'logs_info_label'):
+                self.logs_info_label.setText(tr('settings.logs_info'))
             
             # 更新GitHub按钮
+            browse_btns = self.settings_page.findChildren(QPushButton)
             for btn in browse_btns:
                 if btn.text() and ("访问GitHub仓库" in btn.text() or "GitHub" in btn.text()):
                     if btn.text().startswith("🐙"):
