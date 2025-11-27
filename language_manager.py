@@ -6,6 +6,7 @@
 
 import json
 import os
+import sys
 from pathlib import Path
 import logging
 
@@ -24,7 +25,15 @@ class LanguageManager:
         
         # 设置语言文件目录
         if language_dir is None:
-            self.language_dir = Path(__file__).parent / "language"
+            # 检测是否在打包环境中运行
+            if getattr(sys, 'frozen', False):
+                # 打包后的环境 - 使用可执行文件所在目录
+                base_path = Path(sys.executable).parent
+            else:
+                # 开发环境 - 使用当前文件所在目录
+                base_path = Path(__file__).parent
+            
+            self.language_dir = base_path / "language"
         else:
             self.language_dir = Path(language_dir)
         
