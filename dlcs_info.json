@@ -1,0 +1,730 @@
+[
+    {
+        "name": "重型货物包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/531131/8d68aae4dccf1955f49781628922b193da02b6bb/header.jpg?t=1753962084",
+        "steam_link": "https://store.steampowered.com/app/1456860/",
+        "dlc_id": 1456860
+    },
+    {
+        "name": "希腊", 
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2604420/cebe22adfddfdec1d60f73217a85ed2e68df1563/header.jpg?t=1753957826",
+        "steam_link": "https://store.steampowered.com/app/2604420/",
+        "dlc_id": 2604420
+    },
+    {
+        "name": "DAF XF 电动版",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3977520/d6a13ade06f8ab49177d84e5e842036a315acfb6/header.jpg?t=1760463782",
+        "steam_link": "https://store.steampowered.com/app/3977520/",
+        "dlc_id": 3977520
+    },
+    {
+        "name": "希腊神话包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3335300/header.jpg?t=1757412805",
+        "steam_link": "https://store.steampowered.com/app/3335300/",
+        "dlc_id": 3335300
+    },
+    {
+        "name": "沃尔沃FH系列 6",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3323360/457d1f617421ef8578940c536640809f96e529e3/header.jpg?t=1753957427",
+        "steam_link": "https://store.steampowered.com/app/3323360/",
+        "dlc_id": 3323360
+    },
+    {
+        "name": "依维柯S-Way",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3354860/bae8c576370eff8f63c9e1f0f894069632e2b723/header.jpg?t=1753957706",
+        "steam_link": "https://store.steampowered.com/app/3354860/",
+        "dlc_id": 3354860
+    },
+    {
+        "name": "沃尔沃FH系列 5",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3323350/a57b75d8c29f0bd48a59c29084f3be7da9f32bdd/header.jpg?t=1753957525",
+        "steam_link": "https://store.steampowered.com/app/3323350/",
+        "dlc_id": 3323350
+    },
+    {
+        "name": "Kässbohrer拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3034950/c54bc9e52b6fb2050c7f98e288e4a5a3dbbd24dd/header.jpg?t=1753957896",
+        "steam_link": "https://store.steampowered.com/app/3034950/",
+        "dlc_id": 3034950
+    },
+    {
+        "name": "Krone拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/933610/ca1bf459641dabef78dcb4ba720f284a5f55b730/header.jpg?t=1753961454",
+        "steam_link": "https://store.steampowered.com/app/933610/",
+        "dlc_id": 933610
+    },
+    {
+        "name": "Kögel拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3034940/ad48efd9f6c291ba786639c7032b7ebb29766ac1/header.jpg?t=1753957971",
+        "steam_link": "https://store.steampowered.com/app/3034940/",
+        "dlc_id": 3034940
+    },
+    {
+        "name": "JCB设备包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2780800/7096c6492bc240b19dfbebbda4510ae1b7844b82/header.jpg?t=1753958239",
+        "steam_link": "https://store.steampowered.com/app/2780800/",
+        "dlc_id": 2780800
+    },
+    {
+        "name": "斯堪尼亚S BEV",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3035040/b3f10a717c5ab266f37b4387659b84267f82b6d9/header.jpg?t=1753958080",
+        "steam_link": "https://store.steampowered.com/app/3035040/",
+        "dlc_id": 3035040
+    },
+    {
+        "name": "雷诺卡车E-Tech T",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2932420/20a867fc7d7df8ad971cf85c86d648f87c292729/header.jpg?t=1753958149",
+        "steam_link": "https://store.steampowered.com/app/2932420/",
+        "dlc_id": 2932420
+    },
+    {
+        "name": "现代线条涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2579670/649dbcc1e6b61c00e7eeccebcd662793590ee57f/header.jpg?t=1753958796",
+        "steam_link": "https://store.steampowered.com/app/2579670/",
+        "dlc_id": 2579670
+    },
+    {
+        "name": "街头艺术涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1967650/8f4b0230f7458cf03ffe0046284855810e7a3057/header.jpg?t=1753959493",
+        "steam_link": "https://store.steampowered.com/app/1967650/",
+        "dlc_id": 1967650
+    },
+    {
+        "name": "乌克兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1918370/header.jpg?t=1753959698",
+        "steam_link": "https://store.steampowered.com/app/1918370/",
+        "dlc_id": 1918370
+    },
+    {
+        "name": "雷诺卡车T改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1967640/4ae07010c131284f8946a6f86bff4379e0e22615/header.jpg?t=1753959540",
+        "steam_link": "https://store.steampowered.com/app/1967640/",
+        "dlc_id": 1967640
+    },
+    {
+        "name": "伊比利亚半岛",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1209460/header_schinese.jpg?t=1753960294",
+        "steam_link": "https://store.steampowered.com/app/1209460/",
+        "dlc_id": 1209460
+    },
+    {
+        "name": "黑海之路",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1056760/header_schinese.jpg?t=1753961034",
+        "steam_link": "https://store.steampowered.com/app/1056760/",
+        "dlc_id": 1056760
+    },
+    {
+        "name": "波罗的海",
+        "files": ["dlc_balt.scs"],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/925580/header_schinese.jpg?t=1753961285",
+        "steam_link": "https://store.steampowered.com/app/925580/",
+        "dlc_id": 925580
+    },
+    {
+        "name": "意大利",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558244/81e219d061a698d9195fd54f12490fd39d667c52/header.jpg?t=1753961929",
+        "steam_link": "https://store.steampowered.com/app/558244/",
+        "dlc_id": 558244
+    },
+    {
+        "name": "法兰西万岁！",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/531130/12e1527163a739ab37f5a910045f9a74246b1d7e/header.jpg?t=1753962461",
+        "steam_link": "https://store.steampowered.com/app/531130/",
+        "dlc_id": 531130
+    },
+    {
+        "name": "斯堪的纳维亚",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304212/c8a19f31c2eef65f1b78b1210c04073867220a02/header.jpg?t=1764070183",
+        "steam_link": "https://store.steampowered.com/app/304212/",
+        "dlc_id": 304212
+    },
+    {
+        "name": "向东进发！",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227310/ff67a1defadae8f710e3439d90a16dc5f8ae42f5/header.jpg?t=1754032656",
+        "steam_link": "https://store.steampowered.com/app/227310/",
+        "dlc_id": 227310
+    },
+    {
+        "name": "特殊运输",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558245/a3ec15955a2550a5ef76dae23a3a62d073306cd3/header.jpg?t=1758549045",
+        "steam_link": "https://store.steampowered.com/app/558245/",
+        "dlc_id": 558245
+    },
+    {
+        "name": "沃尔沃建筑设备",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1704460/569df1ae2acc41afec207f8e92276c2b32327462/header.jpg?t=1753959743",
+        "steam_link": "https://store.steampowered.com/app/1704460/",
+        "dlc_id": 1704460
+    },
+    {
+        "name": "重型货物包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/531131/8d68aae4dccf1955f49781628922b193da02b6bb/header.jpg?t=1753962084",
+        "steam_link": "https://store.steampowered.com/app/531131/",
+        "dlc_id": 531131
+    },
+    {
+        "name": "高功率货物包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304214/9ff631427a600241e20b746fd08b3762000fa28d/header.jpg?t=1754031867",
+        "steam_link": "https://store.steampowered.com/app/304214/",
+        "dlc_id": 304214
+    },
+    {
+        "name": "Actros改装包",
+        "files": ["dlc_actros_tuning.scs"],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1056761/cfc9bf0f210d6bdb2e6ebfa74f58b8f8279fc8a9/header.jpg?t=1753961187",
+        "steam_link": "https://store.steampowered.com/app/1056761/",
+        "dlc_id": 1056761
+    },
+    {
+        "name": "狮鹫改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461244/b0984781f4e35f7a6b4e0187b417d8d49e1274c9/header.jpg?t=1754028404",
+        "steam_link": "https://store.steampowered.com/app/461244/",
+        "dlc_id": 461244
+    },
+    {
+        "name": "FH改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1299530/8cb53a47c1729e697bbe68716ace208a377da959/header.jpg?t=1758009703",
+        "steam_link": "https://store.steampowered.com/app/1299530/",
+        "dlc_id": 1299530
+    },
+    {
+        "name": "XF改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461249/8d6d9229b7cbdca9de969f018120bbda678766c5/header.jpg?t=1753961983",
+        "steam_link": "https://store.steampowered.com/app/461249/",
+        "dlc_id": 461249
+    },
+    {
+        "name": "Schwarzmüller拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388477/1878c3401408aeee761a635b5c9b14e5a7096a3d/header.jpg?t=1754028288",
+        "steam_link": "https://store.steampowered.com/app/388477/",
+        "dlc_id": 388477
+    },
+    {
+        "name": "固特异轮胎包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1117140/a7833a760940022919381235337688e79abbed60/header.jpg?t=1755522025",
+        "steam_link": "https://store.steampowered.com/app/1117140/",
+        "dlc_id": 1117140
+    },
+    {
+        "name": "Schmitz Cargobull拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2833100/45e4b1ba231c768045a81c9516747fb870d4dd34/header.jpg?t=1758548602",
+        "steam_link": "https://store.steampowered.com/app/2833100/",
+        "dlc_id": 2833100
+    },
+    {
+        "name": "HS-Schoch改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1209461/64daf507f79d6399a5ae5f4396084974f7ac2fd4/header.jpg?t=1758548711",
+        "steam_link": "https://store.steampowered.com/app/1209461/",
+        "dlc_id": 1209461
+    },
+    {
+        "name": "轮毂改装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388475/5b7af5c8589aefbcee25b8e73b32b3b4e4e35ab1/header.jpg?t=1754028828",
+        "steam_link": "https://store.steampowered.com/app/388475/",
+        "dlc_id": 388475
+    },
+    {
+        "name": "驾驶室配件",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388470/299603c2ad70930477f5349d904203f230e689b3/header.jpg?t=1754028922",
+        "steam_link": "https://store.steampowered.com/app/388470/",
+        "dlc_id": 388470
+    },
+    {
+        "name": "超级条纹涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1415700/4da70d023b30d3d45a91575bb9c22c1328a9aff1/header.jpg?t=1754910344",
+        "steam_link": "https://store.steampowered.com/app/1415700/",
+        "dlc_id": 1415700
+    },
+    {
+        "name": "乌鸦卡车设计包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/318521/56329eb83aa8b89e5e1b4c308be900844c0a8844/header.jpg?t=1754029368",
+        "steam_link": "https://store.steampowered.com/app/318521/",
+        "dlc_id": 318521
+    },
+    {
+        "name": "车窗旗帜",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461242/42a485729578edf0b2781e54e1ac1720dc4a62b3/header.jpg?t=1754028544",
+        "steam_link": "https://store.steampowered.com/app/461242/",
+        "dlc_id": 461242
+    },
+    {
+        "name": "农历新年包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526950/d46984946676a749bd34d20b9320b881cbb4fe8f/header.jpg?t=1753960383",
+        "steam_link": "https://store.steampowered.com/app/526950/",
+        "dlc_id": 526950
+    },
+    {
+        "name": "情人节涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558243/4121cd36a133b777b65b008d38d92d4d66d2d026/header.jpg?t=1753962210",
+        "steam_link": "https://store.steampowered.com/app/558243/",
+        "dlc_id": 558243
+    },
+    {
+        "name": "自然之力涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292320/bf50057f65fb0db00fd67c5af749fcfd35cfc445/header.jpg?t=1754468040",
+        "steam_link": "https://store.steampowered.com/app/292320/",
+        "dlc_id": 292320
+    },
+    {
+        "name": "万圣节涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/258460/99ae39872abfcc6ee632763ab14ebe882db3780b/header.jpg?t=1754908390",
+        "steam_link": "https://store.steampowered.com/app/258460/",
+        "dlc_id": 258460
+    },
+    {
+        "name": "冰冷涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/266930/5fa567d7f0da18c3d91d72907725daaa1ef22d69/header.jpg?t=1754483091",
+        "steam_link": "https://store.steampowered.com/app/266930/",
+        "dlc_id": 266930
+    },
+    {
+        "name": "圣诞节涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/318520/ca930b24dc0d4d1708805eca6e346937e3a495c4/header.jpg?t=1754029468",
+        "steam_link": "https://store.steampowered.com/app/318520/",
+        "dlc_id": 318520
+    },
+    {
+        "name": "太空涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/925650/f9d7a270859e162bd642cd8c9f391882d333d78c/header.jpg?t=1753961505",
+        "steam_link": "https://store.steampowered.com/app/925650/",
+        "dlc_id": 925650
+    },
+    {
+        "name": "海盗涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461248/e5391e959fb22074295d81de2a666b4f36a0f8b3/header.jpg?t=1754028242",
+        "steam_link": "https://store.steampowered.com/app/461248/",
+        "dlc_id": 461248
+    },
+    {
+        "name": "史前涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/266931/d47a8bf7e09cdcb8cb17435c89be70d1f544fc13/header.jpg?t=1754028971",
+        "steam_link": "https://store.steampowered.com/app/266931/",
+        "dlc_id": 266931
+    },
+    {
+        "name": "维京传奇",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347212/fc5c95bd14a26474ff60a08a4895bf4f02a2e29d/header.jpg?t=1754029133",
+        "steam_link": "https://store.steampowered.com/app/347212/",
+        "dlc_id": 347212
+    },
+    {
+        "name": "龙卡车设计包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558240/63c9a56354363e4f9a02ee8569b7684058ac5165/header.jpg?t=1755505657",
+        "steam_link": "https://store.steampowered.com/app/558240/",
+        "dlc_id": 558240
+    },
+    {
+        "name": "奇幻涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304210/d93e93269281ea18aa3812ffc4f70a9c6fbc50c1/header.jpg?t=1754031916",
+        "steam_link": "https://store.steampowered.com/app/304210/",
+        "dlc_id": 304210
+    },
+    {
+        "name": "金属涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/297790/2c18e6b92a0510a9489b08c741eb3154441d3680/header.jpg?t=1754032499",
+        "steam_link": "https://store.steampowered.com/app/297790/",
+        "dlc_id": 297790
+    },
+    {
+        "name": "翻转涂装设计",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/301180/1a00892007993080dd021f583ffa6ef699ef0aea/header.jpg?t=1754032136",
+        "steam_link": "https://store.steampowered.com/app/301180/",
+        "dlc_id": 301180
+    },
+    {
+        "name": "捷克涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/318511/header.jpg?t=1754031718",
+        "steam_link": "https://store.steampowered.com/app/318511/",
+        "dlc_id": 318511
+    },
+    {
+        "name": "斯洛伐克涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461240/ad800010a47045fb0da30f9d677b8ee9f2ff91d1/header.jpg?t=1754028713",
+        "steam_link": "https://store.steampowered.com/app/461240/",
+        "dlc_id": 461240
+    },
+    {
+        "name": "波兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304020/header.jpg?t=1754032037",
+        "steam_link": "https://store.steampowered.com/app/304020/",
+        "dlc_id": 304020
+    },
+    {
+        "name": "德国涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/318500/header.jpg?t=1754031789",
+        "steam_link": "https://store.steampowered.com/app/318500/",
+        "dlc_id": 318500
+    },
+    {
+        "name": "奥地利涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461243/ef01a6c0f3b034263cd9ddcb54f3e2e70dc0a3f1/header.jpg?t=1754028366",
+        "steam_link": "https://store.steampowered.com/app/461243/",
+        "dlc_id": 461243
+    },
+    {
+        "name": "瑞士涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461246/cc3e1be1fb4ce36c1784eca35ef1b3ecc06ec9f5/header.jpg?t=1754028331",
+        "steam_link": "https://store.steampowered.com/app/461246/",
+        "dlc_id": 461246
+    },
+    {
+        "name": "匈牙利涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388479/header.jpg?t=1754028789",
+        "steam_link": "https://store.steampowered.com/app/388479/",
+        "dlc_id": 388479
+    },
+    {
+        "name": "挪威涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347190/c6e1760681a3c6cf62979c13c332a4db490f311d/header.jpg?t=1754029281",
+        "steam_link": "https://store.steampowered.com/app/347190/",
+        "dlc_id": 347190
+    },
+    {
+        "name": "瑞典涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347211/header.jpg?t=1754029214",
+        "steam_link": "https://store.steampowered.com/app/347211/",
+        "dlc_id": 347211
+    },
+    {
+        "name": "芬兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540720/header.jpg?t=1754028192",
+        "steam_link": "https://store.steampowered.com/app/540720/",
+        "dlc_id": 540720
+    },
+    {
+        "name": "丹麦涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347210/header.jpg?t=1754029247",
+        "steam_link": "https://store.steampowered.com/app/347210/",
+        "dlc_id": 347210
+    },
+    {
+        "name": "爱沙尼亚涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/980590/9cfcf1407864951d4b15d3f8afbce346c0b8cea2/header.jpg?t=1753961399",
+        "steam_link": "https://store.steampowered.com/app/980590/",
+        "dlc_id": 980590
+    },
+    {
+        "name": "拉脱维亚涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/980591/header.jpg?t=1696679734",
+        "steam_link": "https://store.steampowered.com/app/980591/",
+        "dlc_id": 980591
+    },
+    {
+        "name": "立陶宛涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/980592/138afbd2bb47214ee6867f0b55103e2f6df0611d/header.jpg?t=1753961335",
+        "steam_link": "https://store.steampowered.com/app/980592/",
+        "dlc_id": 980592
+    },
+    {
+        "name": "米其林粉丝包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388471/0b7adc5cab0eb2573175e55d2602338c75b41879/header.jpg?t=1753962414",
+        "steam_link": "https://store.steampowered.com/app/388471/",
+        "dlc_id": 388471
+    },
+    {
+        "name": "荷兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/909640/header.jpg?t=1753961545",
+        "steam_link": "https://store.steampowered.com/app/909640/",
+        "dlc_id": 909640
+    },
+    {
+        "name": "西班牙涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461241/0da458a0e1799499a2291f07d38882962db93a69/header.jpg?t=1757508657",
+        "steam_link": "https://store.steampowered.com/app/461241/",
+        "dlc_id": 461241
+    },
+    {
+        "name": "葡萄牙涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/876980/header.jpg?t=1753961600",
+        "steam_link": "https://store.steampowered.com/app/876980/",
+        "dlc_id": 876980
+    },
+    {
+        "name": "法国涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/318510/73c32598be67bfe75d55fd1ee158eaac496985e1/header.jpg?t=1757321828",
+        "steam_link": "https://store.steampowered.com/app/318510/",
+        "dlc_id": 318510
+    },
+    {
+        "name": "意大利涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388476/9bb745c9ef1cff73110510f623bf29765619b3b3/header.jpg?t=1757507893",
+        "steam_link": "https://store.steampowered.com/app/388476/",
+        "dlc_id": 388476
+    },
+    {
+        "name": "罗马尼亚涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558241/header.jpg?t=1753962367",
+        "steam_link": "https://store.steampowered.com/app/558241/",
+        "dlc_id": 558241
+    },
+    {
+        "name": "Bulgarian Paint Jobs  Pack",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1159030/header.jpg?t=1753961077",
+        "steam_link": "https://store.steampowered.com/app/1159030/",
+        "dlc_id": 1159030
+    },
+    {
+        "name": "英国涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/297791/b7bc322750d7c89129ee0d13882fe345b8e616d5/header.jpg?t=1754032409",
+        "steam_link": "https://store.steampowered.com/app/297791/",
+        "dlc_id": 297791
+    },
+    {
+        "name": "爱尔兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/297792/3d035ff4e3f6da42e6026765f312d59c0c24d2f1/header.jpg?t=1754032369",
+        "steam_link": "https://store.steampowered.com/app/297792/",
+        "dlc_id": 297792
+    },
+    {
+        "name": "苏格兰涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/297793/a9f554a4f824a46e1e7f52e8a3b0279e8f218b67/header.jpg?t=1754032177",
+        "steam_link": "https://store.steampowered.com/app/297793/",
+        "dlc_id": 297793
+    },
+    {
+        "name": "Belg涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540721/56beea2bf861a937fdace1f10d3924b0b919b25d/header.jpg?t=1753962505",
+        "steam_link": "https://store.steampowered.com/app/540721/",
+        "dlc_id": 540721
+    },
+    {
+        "name": "Turk涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388474/header.jpg?t=1754028752",
+        "steam_link": "https://store.steampowered.com/app/388474/",
+        "dlc_id": 388474
+    },
+    {
+        "name": "Canad涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304213/7925d6350ae562f7fe369dee3103dd15d3f8e5a8/header.jpg?t=1754032004",
+        "steam_link": "https://store.steampowered.com/app/304213/",
+        "dlc_id": 304213
+    },
+    {
+        "name": "USA涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304211/8be64953d301bd1106f9de98983d00a48b3c93f3/header.jpg?t=1757324214",
+        "steam_link": "https://store.steampowered.com/app/304211/",
+        "dlc_id": 304211
+    },
+    {
+        "name": "Brazil涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304140/2c1ba81c1c6c3830e2c49312e884871bab931548/header.jpg?t=1757507775",
+        "steam_link": "https://store.steampowered.com/app/304140/",
+        "dlc_id": 304140
+    },
+    {
+        "name": "Japan涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388472/f943e4c03d7bfb13b313060f01f615440ec5a59e/header.jpg?t=1757324154",
+        "steam_link": "https://store.steampowered.com/app/388472/",
+        "dlc_id": 388472
+    },
+    {
+        "name": "South Korean涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461245/d5e0977b95700cd2ddde67700b99ced3a46d3a52/header.jpg?t=1754028443",
+        "steam_link": "https://store.steampowered.com/app/461245/",
+        "dlc_id": 461245
+    },
+    {
+        "name": "Chin涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461247/623e351425ec7d142adc4fad95717c6717966826/header.jpg?t=1754028487",
+        "steam_link": "https://store.steampowered.com/app/461247/",
+        "dlc_id": 461247
+    },
+    {
+        "name": "Austral涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558242/2c875af539dd5e8ce2145e428e7b2b75230826a8/header.jpg?t=1753962317",
+        "steam_link": "https://store.steampowered.com/app/558242/",
+        "dlc_id": 558242
+    },
+    {
+        "name": "DAF XG/XG+",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1650650/036db16c4db20c347c94dcff4f0f4ac1c36f8728/header.jpg?t=1753959800",
+        "steam_link": "https://store.steampowered.com/app/1650650/",
+        "dlc_id": 1650650
+    },
+    {
+        "name": "Pink Ribbon Charity Pack",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1068290/51758c2a081878c8025d6397d7a07d4c48038bd6/header.jpg?t=1753961140",
+        "steam_link": "https://store.steampowered.com/app/1068290/",
+        "dlc_id": 1068290
+    },
+    {
+        "name": "西巴尔干",
+        "files": ["dlc_balkan_e.scs","dlc_balkan_w.scs"],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2004210/1e291946eb2ca0b65895d1d6479aa657d6d68f71/header.jpg?t=1753958731",
+        "steam_link": "https://store.steampowered.com/app/2004210/",
+        "dlc_id": 2004210
+    },
+    {
+        "name": "Feldbinder拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2193220/af5a6e14ac7c63e0c084cbd81645cad2ff9a6e3b/header.jpg?t=1753958943",
+        "steam_link": "https://store.steampowered.com/app/2193220/",
+        "dlc_id": 2193220
+    },
+    {
+        "name": "Heart of Russia",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1536500/header.jpg?t=1696679200",
+        "steam_link": "https://store.steampowered.com/app/1536500/",
+        "dlc_id": 1536500
+    },
+    {
+        "name": "MAN TGX",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2371170/cef2f5906b4693d87a616ef6a7040fd62c36088e/header.jpg?t=1753958898",
+        "steam_link": "https://store.steampowered.com/app/2371170/",
+        "dlc_id": 2371170
+    },
+    {
+        "name": "Wielton拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2455690/490bf81095983ccefe65a88d5b8a75d57fe59b1e/header.jpg?t=1753958845",
+        "steam_link": "https://store.steampowered.com/app/2455690/",
+        "dlc_id": 2455690
+    },
+    {
+        "name": "TIRSAN拖车包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2569750/c76a9a6b4fab3584751e8ba3358664b48eb6d0bb/header.jpg?t=1753958647",
+        "steam_link": "https://store.steampowered.com/app/2569750/",
+        "dlc_id": 2569750
+    },
+    {
+        "name": "Nordic Horizons",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2780810/header.jpg?t=1763391193",
+        "steam_link": "https://store.steampowered.com/app/2780810/",
+        "dlc_id": 2780810
+    },
+    {
+        "name": "DAF XD",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2611740/67143626262720cf684a088e6ccd6b74c95bc94e/header.jpg?t=1753958589",
+        "steam_link": "https://store.steampowered.com/app/2611740/",
+        "dlc_id": 2611740
+    },
+    {
+        "name": "Russ涂装包",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347213/header.jpg?t=1754029319",
+        "steam_link": "https://store.steampowered.com/app/347213/",
+        "dlc_id": 347213
+    },
+    {
+        "name": "Iceland",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3796990/7513efb0c19fbb12a7f428e90fb4a67f8e198f1f/header.jpg?t=1749860704",
+        "steam_link": "https://store.steampowered.com/app/3796990/",
+        "dlc_id": 3796990
+    },
+    {
+        "name": "Coaches",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3809270/dd1b9f42a9f145af3c82ebb9e86b411eb6991ae7/header.jpg?t=1749919986",
+        "steam_link": "https://store.steampowered.com/app/3809270/",
+        "dlc_id": 3809270
+    },
+    {
+        "name": "Isle of Ireland",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3851260/c3521ab55512053254d718b9785bcb92341699b3/header.jpg?t=1761687894",
+        "steam_link": "https://store.steampowered.com/app/3851260/",
+        "dlc_id": 3851260
+    },
+    {
+        "name": "KRONE Agriculture Equipment",
+        "files": [],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3872920/e8687ee2f57255a7747993e4bf8a731480f5844c/header.jpg?t=1759937684",
+        "steam_link": "https://store.steampowered.com/app/3872920/",
+        "dlc_id": 3872920
+    }
+]
