@@ -11,8 +11,8 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QMessageBox, QFileDialog, QApplication, QToolButton,
                              QFrame, QScrollArea, QGraphicsDropShadowEffect, QSizePolicy,
                              QListWidget, QListWidgetItem)
-from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QSize
-from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap
+from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QSize, QUrl
+from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap, QDesktopServices
 
 import os
 import logging
@@ -49,7 +49,7 @@ class MainWindow(QMainWindow):
         self.logger.info("主窗口初始化完成")
     
     def init_ui(self):
-        """初始化用户界面 - 固定尺寸800x600，禁止用户缩放"""
+        """)"初始化用户界面 - 固定尺寸800x600，禁止用户缩放"""
         # 设置窗口属性
         self.setWindowTitle("ETS2 DLC Tools")
         self.setFixedSize(800, 600)  # 设置固定尺寸800x600，禁止用户缩放
@@ -273,6 +273,167 @@ class MainWindow(QMainWindow):
     
 
     
+    def create_github_button(self):
+        """创建GitHub图标按钮"""
+        github_btn = QToolButton()
+        github_btn.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonIconOnly)
+        github_btn.setFixedSize(32, 32)
+        github_btn.setToolTip("访问GitHub仓库")
+        
+        # GitHub图标文件路径
+        github_icon_path = Path(__file__).parent.parent / "resources" / "github_icon.png"
+        
+        if github_icon_path.exists():
+            try:
+                # 创建GitHub图标
+                github_icon = QIcon(str(github_icon_path))
+                if not github_icon.isNull():
+                    github_btn.setIcon(github_icon)
+                    github_btn.setIconSize(QSize(24, 24))
+                    github_btn.setStyleSheet("""
+                        QToolButton {
+                            border: none;
+                            border-radius: 4px;
+                            background-color: transparent;
+                            padding: 4px;
+                        }
+                        QToolButton:hover {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                        QToolButton:pressed {
+                            background-color: rgba(0, 0, 0, 0.2);
+                        }
+                    """)
+                    self.logger.info(f"GitHub图标设置成功: {github_icon_path}")
+                else:
+                    self.logger.warning(f"GitHub图标文件无效: {github_icon_path}")
+                    self.set_fallback_github_icon(github_btn)
+            except Exception as e:
+                self.logger.error(f"设置GitHub图标失败: {e}")
+                self.set_fallback_github_icon(github_btn)
+        else:
+            self.logger.warning(f"GitHub图标文件不存在: {github_icon_path}")
+            self.set_fallback_github_icon(github_btn)
+        
+        # 连接点击事件到GitHub仓库
+        github_btn.clicked.connect(self.open_github_repo)
+        return github_btn
+    
+    def set_fallback_github_icon(self, github_btn):
+        """设置备用的GitHub图标（使用emoji）"""
+        github_btn.setText("🐙")  # 使用章鱼emoji作为GitHub图标
+        github_btn.setStyleSheet("""
+            QToolButton {
+                font-size: 20px;
+                border: none;
+                border-radius: 4px;
+                background-color: transparent;
+                padding: 4px;
+            }
+            QToolButton:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        """)
+    
+    def create_github_button_for_settings(self):
+        """为设置页面创建GitHub图标按钮"""
+        github_btn = QPushButton()
+        github_btn.setToolTip("访问GitHub仓库")
+        github_btn.setFixedHeight(40)
+        github_btn.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        
+        # GitHub图标文件路径
+        github_icon_path = Path(__file__).parent.parent / "resources" / "github_icon.png"
+        
+        if github_icon_path.exists():
+            try:
+                # 创建GitHub图标
+                github_icon = QIcon(str(github_icon_path))
+                if not github_icon.isNull():
+                    github_btn.setIcon(github_icon)
+                    github_btn.setIconSize(QSize(24, 24))
+                    github_btn.setText(" 访问GitHub仓库")
+                    self.logger.info(f"设置页面GitHub图标设置成功: {github_icon_path}")
+                else:
+                    self.logger.warning(f"设置页面GitHub图标文件无效: {github_icon_path}")
+                    self.set_fallback_github_icon_for_settings(github_btn)
+            except Exception as e:
+                self.logger.error(f"设置页面GitHub图标设置失败: {e}")
+                self.set_fallback_github_icon_for_settings(github_btn)
+        else:
+            self.logger.warning(f"设置页面GitHub图标文件不存在: {github_icon_path}")
+            self.set_fallback_github_icon_for_settings(github_btn)
+        
+        # 设置按钮样式
+        github_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #24292e;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 8px 16px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+            }
+            QPushButton:hover {
+                background-color: #2f363d;
+            }
+            QPushButton:pressed {
+                background-color: #1f2328;
+            }
+        """)
+        
+        # 连接点击事件到GitHub仓库
+        github_btn.clicked.connect(self.open_github_repo)
+        return github_btn
+    
+    def set_fallback_github_icon_for_settings(self, github_btn):
+        """为设置页面设置备用的GitHub图标"""
+        github_btn.setText("🐙 访问GitHub仓库")  # 使用章鱼emoji作为GitHub图标
+        github_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #24292e;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 8px 16px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: left;
+            }
+            QPushButton:hover {
+                background-color: #2f363d;
+            }
+            QPushButton:pressed {
+                background-color: #1f2328;
+            }
+        """)
+    
+    def open_github_repo(self):
+        """打开GitHub仓库链接"""
+        # 默认的GitHub仓库地址，可以在配置文件中自定义
+        github_url = self.config.get('github_repo', 'https://github.com/tengze233/ETS2_DLC_Tools')
+        QDesktopServices.openUrl(QUrl(github_url))
+        self.logger.info(f"打开GitHub仓库: {github_url}")
+    
+    def open_logs_folder(self):
+        """打开日志文件夹"""
+        try:
+            logs_path = Path(__file__).parent.parent / "logs"
+            if logs_path.exists():
+                # 使用系统默认文件管理器打开文件夹
+                QDesktopServices.openUrl(QUrl.fromLocalFile(str(logs_path)))
+                self.logger.info(f"打开日志文件夹: {logs_path}")
+            else:
+                # 如果logs文件夹不存在，创建它
+                logs_path.mkdir(exist_ok=True)
+                QDesktopServices.openUrl(QUrl.fromLocalFile(str(logs_path)))
+                self.logger.info(f"创建并打开日志文件夹: {logs_path}")
+        except Exception as e:
+            self.logger.error(f"打开日志文件夹失败: {e}")
+            QMessageBox.warning(self, "警告", f"无法打开日志文件夹: {e}")
+    
     def create_installed_page(self):
         """创建已安装DLC页面"""
         page = QWidget()
@@ -451,7 +612,50 @@ class MainWindow(QMainWindow):
         
         # 主题设置已移除
         
+        # 实用工具区域
+        tools_group = QWidget()
+        tools_layout = QVBoxLayout(tools_group)
+        
+        # 打开日志文件夹按钮
+        open_logs_btn = QPushButton("📁 打开日志文件夹")
+        open_logs_btn.setToolTip("打开日志文件夹，查看程序运行日志")
+        open_logs_btn.clicked.connect(self.open_logs_folder)
+        open_logs_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 8px 16px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            QPushButton:hover {
+                background-color: #218838;
+            }
+            QPushButton:pressed {
+                background-color: #1e7e34;
+            }
+        """)
+        tools_layout.addWidget(open_logs_btn)
+        
+        # 日志说明标签
+        logs_info_label = QLabel("💡 日志文件位于 logs 文件夹中，包含程序运行的详细信息")
+        logs_info_label.setStyleSheet("""
+            QLabel {
+                color: #6c757d;
+                font-size: 12px;
+                padding: 5px;
+            }
+        """)
+        tools_layout.addWidget(logs_info_label)
+        
+        # GitHub仓库链接按钮
+        github_btn = self.create_github_button_for_settings()
+        tools_layout.addWidget(github_btn)
+        
         layout.addWidget(settings_group)
+        layout.addWidget(tools_group)
         layout.addStretch()
         
         return page

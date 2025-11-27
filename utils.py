@@ -61,6 +61,13 @@ def setup_logging(level="INFO", log_file=None, max_size=10485760, backup_count=5
             log_file, maxBytes=max_size, backupCount=backup_count, encoding='utf-8'
         )
         file_handler.setFormatter(logging.Formatter(log_format))
+        
+        # 添加过滤器，过滤掉INFO级别的日志（仅记录WARNING及以上级别）
+        class InfoFilter(logging.Filter):
+            def filter(self, record):
+                return record.levelno > logging.INFO  # 只记录WARNING、ERROR、CRITICAL
+        
+        file_handler.addFilter(InfoFilter())
         logger.addHandler(file_handler)
     
     return logger
