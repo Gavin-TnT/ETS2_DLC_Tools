@@ -1,0 +1,816 @@
+2025-11-27 16:30:00,000 - root - INFO - 应用程序启动
+2025-11-27 16:30:00,001 - root - INFO - 配置加载完成
+2025-11-27 16:30:00,002 - root - INFO - 日志系统初始化完成
+2025-11-27 16:30:00,003 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:30:00,004 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)2025-11-27 16:29:02,790 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:29:02,792 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:29:03,259 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:29:04,304 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:29:04,530 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:29:05,896 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:29:06,122 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:29:06,354 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:29:06,562 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:29:07,159 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:29:07,826 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:31:38,057 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:31:38,059 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:31:38,523 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:31:39,927 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:34:42,002 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:34:42,003 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:34:42,004 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:34:42,444 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:34:44,499 - ui.MainWindow - INFO - 刷新已安装DLC列表
+2025-11-27 16:34:44,746 - ui.MainWindow - INFO - 刷新已安装DLC列表
+2025-11-27 16:34:44,902 - ui.MainWindow - INFO - 刷新已安装DLC列表
+2025-11-27 16:37:20,869 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:37:20,885 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:37:20,886 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:37:20,888 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:37:21,376 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:42:17,032 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:42:22,474 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:42:22,484 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:42:22,485 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:42:22,485 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 16:42:22,487 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:42:22,937 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:43:45,796 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:43:45,807 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:43:45,809 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:43:45,809 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 16:43:45,812 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:43:46,263 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:44:04,931 - ui.MainWindow - ERROR - 卸载DLC时出错: type object 'QMessageBox' has no attribute 'Yes'
+2025-11-27 16:44:05,920 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:45:36,164 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:45:36,175 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:45:36,176 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:45:36,176 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 16:45:36,177 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:45:36,633 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:45:42,383 - ui.MainWindow - INFO - 移动DLC文件: dlc_actros_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,383 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,389 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,390 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,391 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,391 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,391 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,392 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,392 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,392 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,393 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,393 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,394 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,394 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,394 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,395 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,395 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,395 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,396 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,396 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ca.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,396 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,397 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cn.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,397 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,397 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_de.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,398 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_dk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,398 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ee.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,399 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_es.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,399 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fi.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,400 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,400 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_hu.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,400 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ie.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,401 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,401 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_jp.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,402 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_kr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,402 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,403 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lv.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,403 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_n.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,404 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_nl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,404 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,404 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,405 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ro.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,405 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ru.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,405 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_s.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,406 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sc.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,406 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,407 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_tr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,407 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_uk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,408 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ukr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,408 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_us.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,409 - ui.MainWindow - INFO - 移动DLC文件: dlc_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,409 - ui.MainWindow - INFO - 移动DLC文件: dlc_goodyear.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,410 - ui.MainWindow - INFO - 移动DLC文件: dlc_greece.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,410 - ui.MainWindow - INFO - 移动DLC文件: dlc_greek_paintjobs.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,410 - ui.MainWindow - INFO - 移动DLC文件: dlc_halloween.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,411 - ui.MainWindow - INFO - 移动DLC文件: dlc_heavy_cargo.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,411 - ui.MainWindow - INFO - 移动DLC文件: dlc_hs_schoch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,412 - ui.MainWindow - INFO - 移动DLC文件: dlc_iberia.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,412 - ui.MainWindow - INFO - 移动DLC文件: dlc_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,412 - ui.MainWindow - INFO - 移动DLC文件: dlc_iveco_sway.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,413 - ui.MainWindow - INFO - 移动DLC文件: dlc_jcb.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,413 - ui.MainWindow - INFO - 移动DLC文件: dlc_kassbohrer.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,414 - ui.MainWindow - INFO - 移动DLC文件: dlc_kogel.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,414 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,415 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone_agriculture.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,415 - ui.MainWindow - INFO - 移动DLC文件: dlc_lines.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,416 - ui.MainWindow - INFO - 移动DLC文件: dlc_lunar_new_year.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,416 - ui.MainWindow - INFO - 移动DLC文件: dlc_man_tgx_2020.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,417 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,417 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics2.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,418 - ui.MainWindow - INFO - 移动DLC文件: dlc_michelin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,418 - ui.MainWindow - INFO - 移动DLC文件: dlc_mighty_griffin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,418 - ui.MainWindow - INFO - 移动DLC文件: dlc_nature.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,419 - ui.MainWindow - INFO - 移动DLC文件: dlc_north.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,419 - ui.MainWindow - INFO - 移动DLC文件: dlc_oversize.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,420 - ui.MainWindow - INFO - 移动DLC文件: dlc_pcg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,420 - ui.MainWindow - INFO - 移动DLC文件: dlc_phys_flags.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,421 - ui.MainWindow - INFO - 移动DLC文件: dlc_pink_ribbon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,421 - ui.MainWindow - INFO - 移动DLC文件: dlc_pirates.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,421 - ui.MainWindow - INFO - 移动DLC文件: dlc_prehistoric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,422 - ui.MainWindow - INFO - 移动DLC文件: dlc_raven.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,422 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_etech_t.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,422 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_t_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,423 - ui.MainWindow - INFO - 移动DLC文件: dlc_rims.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,423 - ui.MainWindow - INFO - 移动DLC文件: dlc_rocket_league.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,424 - ui.MainWindow - INFO - 移动DLC文件: dlc_scania_s_2024e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,424 - ui.MainWindow - INFO - 移动DLC文件: dlc_schmitz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,424 - ui.MainWindow - INFO - 移动DLC文件: dlc_schwarzmuller.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,425 - ui.MainWindow - INFO - 移动DLC文件: dlc_space.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,425 - ui.MainWindow - INFO - 移动DLC文件: dlc_streetart.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,425 - ui.MainWindow - INFO - 移动DLC文件: dlc_super_stripes.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,426 - ui.MainWindow - INFO - 移动DLC文件: dlc_tirsan.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,426 - ui.MainWindow - INFO - 移动DLC文件: dlc_toys.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,427 - ui.MainWindow - INFO - 移动DLC文件: dlc_trailers.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,427 - ui.MainWindow - INFO - 移动DLC文件: dlc_valentine.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,428 - ui.MainWindow - INFO - 移动DLC文件: dlc_vikings.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,428 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_construction.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,428 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,429 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2024.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,429 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,429 - ui.MainWindow - INFO - 移动DLC文件: dlc_wielton.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:42,430 - ui.MainWindow - INFO - 移动DLC文件: dlc_winter.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 16:45:43,527 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:45:47,732 - ui.MainWindow - INFO - 显示设置
+2025-11-27 16:46:08,429 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:08,430 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:09,200 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:09,605 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:09,606 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:10,049 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:10,353 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:10,354 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:10,736 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:11,007 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:11,008 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:11,283 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:11,558 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:11,558 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:11,830 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:12,064 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:12,065 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:12,401 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:46:12,583 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:46:12,584 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:46:12,816 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:48:36,795 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:48:36,805 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:48:36,806 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:48:36,807 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:48:36,808 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:48:37,289 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:48:38,168 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:48:39,165 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:48:39,166 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:48:40,531 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:48:41,927 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 16:49:37,545 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:49:37,559 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:49:37,560 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:49:37,561 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:49:37,562 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:49:38,023 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:49:39,317 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:49:40,638 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:52:24,719 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:52:24,733 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:52:24,734 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:52:24,734 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 101 个已安装的DLC文件
+2025-11-27 16:52:24,736 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:52:25,226 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:52:26,818 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:52:27,280 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:52:27,284 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 101 个已安装的DLC文件
+2025-11-27 16:52:34,698 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:52:34,702 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 101 个已安装的DLC文件
+2025-11-27 16:52:34,979 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:53:35,194 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:53:40,880 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:53:40,890 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:53:40,891 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:53:40,892 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:53:40,893 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:53:41,320 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:53:42,485 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:53:43,193 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:53:43,193 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:53:43,456 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:53:43,712 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:53:43,713 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:53:43,934 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:53:45,290 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:53:45,291 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:53:45,946 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:53:46,545 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 16:54:17,655 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:54:17,669 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:54:17,670 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:54:17,671 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:54:17,672 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:54:18,125 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:54:19,022 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:54:19,977 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:54:19,978 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:54:20,281 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:54:22,287 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 16:54:59,857 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:54:59,869 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 16:54:59,870 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:54:59,870 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:54:59,872 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 16:55:00,304 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 16:55:01,261 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:01,856 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:01,857 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:03,290 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:03,979 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:03,980 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:04,266 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:04,543 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:04,544 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:04,815 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:08,624 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:08,625 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:09,861 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:12,520 - ui.MainWindow - INFO - 显示设置
+2025-11-27 16:55:13,599 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:13,945 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:13,946 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:14,750 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:28,040 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:28,040 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:29,140 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 16:55:29,412 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 16:55:29,413 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 16:55:30,037 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:30,695 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:30,711 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:30,712 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:30,713 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 17:03:30,714 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:03:31,167 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:03:32,495 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:32,495 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:32,502 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 101 个已卸载的DLC文件
+2025-11-27 17:03:36,687 - ui.MainWindow - INFO - 安装所有DLC
+2025-11-27 17:03:37,909 - ui.MainWindow - INFO - 移动DLC文件: dlc_actros_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,909 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,910 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,910 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,910 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,911 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,911 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,914 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,914 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,914 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,915 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,915 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,915 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,916 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ca.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,916 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,916 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cn.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,917 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,917 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_de.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,917 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_dk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,918 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ee.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,918 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_es.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,919 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fi.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,919 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,920 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_hu.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,920 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ie.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,920 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,921 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_jp.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,921 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_kr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,921 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,922 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lv.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,922 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_n.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,922 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_nl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,923 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,923 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,923 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ro.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,924 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ru.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,924 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_s.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,924 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sc.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,925 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,925 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_tr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,926 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_uk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,926 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ukr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,927 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_us.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,927 - ui.MainWindow - INFO - 移动DLC文件: dlc_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,928 - ui.MainWindow - INFO - 移动DLC文件: dlc_goodyear.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,928 - ui.MainWindow - INFO - 移动DLC文件: dlc_greece.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,928 - ui.MainWindow - INFO - 移动DLC文件: dlc_greek_paintjobs.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,929 - ui.MainWindow - INFO - 移动DLC文件: dlc_halloween.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,929 - ui.MainWindow - INFO - 移动DLC文件: dlc_heavy_cargo.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,930 - ui.MainWindow - INFO - 移动DLC文件: dlc_hs_schoch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,930 - ui.MainWindow - INFO - 移动DLC文件: dlc_iberia.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,930 - ui.MainWindow - INFO - 移动DLC文件: dlc_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,931 - ui.MainWindow - INFO - 移动DLC文件: dlc_iveco_sway.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,931 - ui.MainWindow - INFO - 移动DLC文件: dlc_jcb.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,932 - ui.MainWindow - INFO - 移动DLC文件: dlc_kassbohrer.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,932 - ui.MainWindow - INFO - 移动DLC文件: dlc_kogel.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,933 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,933 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone_agriculture.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,934 - ui.MainWindow - INFO - 移动DLC文件: dlc_lines.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,934 - ui.MainWindow - INFO - 移动DLC文件: dlc_lunar_new_year.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,935 - ui.MainWindow - INFO - 移动DLC文件: dlc_man_tgx_2020.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,935 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,935 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics2.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,936 - ui.MainWindow - INFO - 移动DLC文件: dlc_michelin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,936 - ui.MainWindow - INFO - 移动DLC文件: dlc_mighty_griffin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,936 - ui.MainWindow - INFO - 移动DLC文件: dlc_nature.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,937 - ui.MainWindow - INFO - 移动DLC文件: dlc_north.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,937 - ui.MainWindow - INFO - 移动DLC文件: dlc_oversize.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,937 - ui.MainWindow - INFO - 移动DLC文件: dlc_pcg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,938 - ui.MainWindow - INFO - 移动DLC文件: dlc_phys_flags.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,938 - ui.MainWindow - INFO - 移动DLC文件: dlc_pink_ribbon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,938 - ui.MainWindow - INFO - 移动DLC文件: dlc_pirates.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,939 - ui.MainWindow - INFO - 移动DLC文件: dlc_prehistoric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,939 - ui.MainWindow - INFO - 移动DLC文件: dlc_raven.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,939 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_etech_t.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,940 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_t_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,940 - ui.MainWindow - INFO - 移动DLC文件: dlc_rims.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,941 - ui.MainWindow - INFO - 移动DLC文件: dlc_rocket_league.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,941 - ui.MainWindow - INFO - 移动DLC文件: dlc_scania_s_2024e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,941 - ui.MainWindow - INFO - 移动DLC文件: dlc_schmitz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,942 - ui.MainWindow - INFO - 移动DLC文件: dlc_schwarzmuller.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,942 - ui.MainWindow - INFO - 移动DLC文件: dlc_space.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,942 - ui.MainWindow - INFO - 移动DLC文件: dlc_streetart.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,943 - ui.MainWindow - INFO - 移动DLC文件: dlc_super_stripes.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,943 - ui.MainWindow - INFO - 移动DLC文件: dlc_tirsan.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,943 - ui.MainWindow - INFO - 移动DLC文件: dlc_toys.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,943 - ui.MainWindow - INFO - 移动DLC文件: dlc_trailers.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,944 - ui.MainWindow - INFO - 移动DLC文件: dlc_valentine.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,944 - ui.MainWindow - INFO - 移动DLC文件: dlc_vikings.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,944 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_construction.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,945 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,945 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2024.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,945 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,946 - ui.MainWindow - INFO - 移动DLC文件: dlc_wielton.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:37,954 - ui.MainWindow - INFO - 移动DLC文件: dlc_winter.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:03:38,740 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:38,746 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:38,749 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:39,733 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:39,736 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:44,049 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:44,049 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:44,049 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:44,635 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:03:45,012 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:45,013 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:45,013 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:45,260 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:45,264 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:45,641 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:45,642 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:45,642 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:45,862 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:45,866 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:46,103 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:46,103 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:46,103 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:46,276 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:46,280 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:46,511 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:46,511 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:46,512 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:47,035 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:47,039 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:47,330 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:47,330 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:47,330 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:47,560 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:47,564 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:47,770 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:47,770 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:47,771 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:47,962 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:47,966 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:48,194 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:48,195 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:48,195 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:48,608 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:48,612 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:48,827 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:48,828 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:48,828 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:49,020 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:49,024 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:49,219 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:49,219 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:49,220 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:49,432 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:03:49,635 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:49,635 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:49,635 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:49,840 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:49,844 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:52,210 - ui.MainWindow - INFO - 刷新已安装DLC列表
+2025-11-27 17:03:52,214 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:53,150 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:03:53,150 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:53,150 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:53,791 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:03:53,792 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:03:54,289 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:03:54,293 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:03:55,433 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 17:04:37,900 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:04:37,911 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:04:37,912 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:04:37,913 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:04:37,915 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:04:38,382 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:08:03,644 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 17:08:09,458 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:08:09,466 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:08:09,467 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:08:09,468 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:08:09,469 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:08:09,940 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:08:11,223 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:08:11,223 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:08:11,224 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:08:12,143 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:08:12,147 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:08:12,688 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:08:12,688 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:08:12,689 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:08:13,731 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:08:13,735 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:08:17,705 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:08:17,705 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:08:17,706 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:09:25,924 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:09:25,932 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:09:44,938 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 17:09:50,976 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:09:50,985 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:09:50,986 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:09:50,986 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:09:50,988 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:09:51,431 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:09:52,341 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:09:52,341 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:09:52,341 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:09:53,130 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:09:53,134 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:09:53,754 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:09:53,754 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:09:53,754 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:09:54,118 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:09:54,122 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:09:54,752 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:09:54,752 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:09:54,753 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:09:55,340 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:09:55,344 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:09:57,459 - ui.MainWindow - INFO - 移动DLC文件: dlc_actros_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,459 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,459 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,460 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,465 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,466 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,466 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,467 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,467 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,467 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,468 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,468 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,468 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,469 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,469 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,469 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,469 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,470 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,470 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,471 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ca.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,471 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,471 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cn.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,472 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,472 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_de.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,472 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_dk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,473 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ee.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,473 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_es.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,473 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fi.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,474 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,474 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_hu.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,474 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ie.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,474 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,475 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_jp.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,476 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_kr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,477 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,477 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lv.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,478 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_n.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,478 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_nl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,478 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,478 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,479 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ro.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,479 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ru.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,479 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_s.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,479 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sc.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,479 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,480 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_tr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,480 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_uk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,480 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ukr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,480 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_us.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,481 - ui.MainWindow - INFO - 移动DLC文件: dlc_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,482 - ui.MainWindow - INFO - 移动DLC文件: dlc_goodyear.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,483 - ui.MainWindow - INFO - 移动DLC文件: dlc_greece.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,483 - ui.MainWindow - INFO - 移动DLC文件: dlc_greek_paintjobs.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,483 - ui.MainWindow - INFO - 移动DLC文件: dlc_halloween.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,484 - ui.MainWindow - INFO - 移动DLC文件: dlc_heavy_cargo.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,484 - ui.MainWindow - INFO - 移动DLC文件: dlc_hs_schoch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,484 - ui.MainWindow - INFO - 移动DLC文件: dlc_iberia.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,485 - ui.MainWindow - INFO - 移动DLC文件: dlc_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,485 - ui.MainWindow - INFO - 移动DLC文件: dlc_iveco_sway.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,485 - ui.MainWindow - INFO - 移动DLC文件: dlc_jcb.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,486 - ui.MainWindow - INFO - 移动DLC文件: dlc_kassbohrer.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,486 - ui.MainWindow - INFO - 移动DLC文件: dlc_kogel.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,486 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,487 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone_agriculture.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,487 - ui.MainWindow - INFO - 移动DLC文件: dlc_lines.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,487 - ui.MainWindow - INFO - 移动DLC文件: dlc_lunar_new_year.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,488 - ui.MainWindow - INFO - 移动DLC文件: dlc_man_tgx_2020.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,488 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,490 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics2.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,491 - ui.MainWindow - INFO - 移动DLC文件: dlc_michelin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,491 - ui.MainWindow - INFO - 移动DLC文件: dlc_mighty_griffin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,491 - ui.MainWindow - INFO - 移动DLC文件: dlc_nature.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,491 - ui.MainWindow - INFO - 移动DLC文件: dlc_north.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,492 - ui.MainWindow - INFO - 移动DLC文件: dlc_oversize.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,492 - ui.MainWindow - INFO - 移动DLC文件: dlc_pcg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,492 - ui.MainWindow - INFO - 移动DLC文件: dlc_phys_flags.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,493 - ui.MainWindow - INFO - 移动DLC文件: dlc_pink_ribbon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,493 - ui.MainWindow - INFO - 移动DLC文件: dlc_pirates.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,493 - ui.MainWindow - INFO - 移动DLC文件: dlc_prehistoric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,493 - ui.MainWindow - INFO - 移动DLC文件: dlc_raven.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,494 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_etech_t.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,495 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_t_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,495 - ui.MainWindow - INFO - 移动DLC文件: dlc_rims.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,496 - ui.MainWindow - INFO - 移动DLC文件: dlc_rocket_league.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,498 - ui.MainWindow - INFO - 移动DLC文件: dlc_scania_s_2024e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,498 - ui.MainWindow - INFO - 移动DLC文件: dlc_schmitz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,499 - ui.MainWindow - INFO - 移动DLC文件: dlc_schwarzmuller.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,499 - ui.MainWindow - INFO - 移动DLC文件: dlc_space.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,500 - ui.MainWindow - INFO - 移动DLC文件: dlc_streetart.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,500 - ui.MainWindow - INFO - 移动DLC文件: dlc_super_stripes.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,500 - ui.MainWindow - INFO - 移动DLC文件: dlc_tirsan.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,501 - ui.MainWindow - INFO - 移动DLC文件: dlc_toys.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,501 - ui.MainWindow - INFO - 移动DLC文件: dlc_trailers.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,502 - ui.MainWindow - INFO - 移动DLC文件: dlc_valentine.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,502 - ui.MainWindow - INFO - 移动DLC文件: dlc_vikings.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,503 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_construction.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,503 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,503 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2024.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,504 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,504 - ui.MainWindow - INFO - 移动DLC文件: dlc_wielton.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:57,504 - ui.MainWindow - INFO - 移动DLC文件: dlc_winter.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:09:58,380 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中未找到DLC文件
+2025-11-27 17:09:59,130 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:09:59,131 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:09:59,131 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 101 个已卸载的DLC文件
+2025-11-27 17:10:10,206 - ui.MainWindow - INFO - 安装选中的DLC
+2025-11-27 17:10:14,117 - ui.MainWindow - INFO - 安装选中的DLC
+2025-11-27 17:10:15,109 - ui.MainWindow - INFO - 移动DLC文件: dlc_super_stripes.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:15,955 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:10:15,956 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 100 个已卸载的DLC文件
+2025-11-27 17:10:15,957 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 1 个DLC文件
+2025-11-27 17:10:16,547 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:10:16,548 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 1 个DLC文件
+2025-11-27 17:10:17,946 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:10:17,947 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:10:17,947 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 100 个已卸载的DLC文件
+2025-11-27 17:10:24,160 - ui.MainWindow - INFO - 安装选中的DLC
+2025-11-27 17:10:25,117 - ui.MainWindow - INFO - 移动DLC文件: dlc_actros_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,118 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,118 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,119 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,119 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,120 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,120 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,120 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,121 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,121 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,122 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,122 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,122 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,123 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,123 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,123 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,124 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,124 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,125 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_bz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,125 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ca.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,125 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,126 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cn.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,126 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_cz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,126 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_de.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,127 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_dk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,127 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ee.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,127 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_es.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,128 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fi.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,128 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,128 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_hu.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,129 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ie.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,129 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,129 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_jp.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,130 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_kr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,130 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,130 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_lv.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,131 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_n.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,131 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_nl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,131 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pl.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,132 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_pt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,132 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ro.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,132 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ru.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,133 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_s.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,133 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sc.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,133 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_sk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,134 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_tr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,134 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_uk.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,135 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_ukr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,135 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_us.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,135 - ui.MainWindow - INFO - 移动DLC文件: dlc_fr.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,136 - ui.MainWindow - INFO - 移动DLC文件: dlc_goodyear.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,136 - ui.MainWindow - INFO - 移动DLC文件: dlc_greece.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,136 - ui.MainWindow - INFO - 移动DLC文件: dlc_greek_paintjobs.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,137 - ui.MainWindow - INFO - 移动DLC文件: dlc_halloween.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,137 - ui.MainWindow - INFO - 移动DLC文件: dlc_heavy_cargo.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,137 - ui.MainWindow - INFO - 移动DLC文件: dlc_hs_schoch.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,137 - ui.MainWindow - INFO - 移动DLC文件: dlc_iberia.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,138 - ui.MainWindow - INFO - 移动DLC文件: dlc_it.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,138 - ui.MainWindow - INFO - 移动DLC文件: dlc_iveco_sway.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,138 - ui.MainWindow - INFO - 移动DLC文件: dlc_jcb.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,139 - ui.MainWindow - INFO - 移动DLC文件: dlc_kassbohrer.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,139 - ui.MainWindow - INFO - 移动DLC文件: dlc_kogel.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,140 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,140 - ui.MainWindow - INFO - 移动DLC文件: dlc_krone_agriculture.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,141 - ui.MainWindow - INFO - 移动DLC文件: dlc_lines.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,141 - ui.MainWindow - INFO - 移动DLC文件: dlc_lunar_new_year.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,142 - ui.MainWindow - INFO - 移动DLC文件: dlc_man_tgx_2020.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,142 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,143 - ui.MainWindow - INFO - 移动DLC文件: dlc_metallics2.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,143 - ui.MainWindow - INFO - 移动DLC文件: dlc_michelin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,143 - ui.MainWindow - INFO - 移动DLC文件: dlc_mighty_griffin.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,144 - ui.MainWindow - INFO - 移动DLC文件: dlc_nature.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,144 - ui.MainWindow - INFO - 移动DLC文件: dlc_north.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,144 - ui.MainWindow - INFO - 移动DLC文件: dlc_oversize.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,145 - ui.MainWindow - INFO - 移动DLC文件: dlc_pcg.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,145 - ui.MainWindow - INFO - 移动DLC文件: dlc_phys_flags.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,145 - ui.MainWindow - INFO - 移动DLC文件: dlc_pink_ribbon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,146 - ui.MainWindow - INFO - 移动DLC文件: dlc_pirates.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,146 - ui.MainWindow - INFO - 移动DLC文件: dlc_prehistoric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,146 - ui.MainWindow - INFO - 移动DLC文件: dlc_raven.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,147 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_etech_t.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,147 - ui.MainWindow - INFO - 移动DLC文件: dlc_renault_t_tuning.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,148 - ui.MainWindow - INFO - 移动DLC文件: dlc_rims.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,148 - ui.MainWindow - INFO - 移动DLC文件: dlc_rocket_league.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,149 - ui.MainWindow - INFO - 移动DLC文件: dlc_scania_s_2024e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,149 - ui.MainWindow - INFO - 移动DLC文件: dlc_schmitz.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,149 - ui.MainWindow - INFO - 移动DLC文件: dlc_schwarzmuller.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,150 - ui.MainWindow - INFO - 移动DLC文件: dlc_space.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,150 - ui.MainWindow - INFO - 移动DLC文件: dlc_streetart.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,150 - ui.MainWindow - INFO - 移动DLC文件: dlc_tirsan.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,151 - ui.MainWindow - INFO - 移动DLC文件: dlc_toys.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,151 - ui.MainWindow - INFO - 移动DLC文件: dlc_trailers.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,151 - ui.MainWindow - INFO - 移动DLC文件: dlc_valentine.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,152 - ui.MainWindow - INFO - 移动DLC文件: dlc_vikings.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,152 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_construction.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,152 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,153 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_fh_2024.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,153 - ui.MainWindow - INFO - 移动DLC文件: dlc_volvo_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,154 - ui.MainWindow - INFO - 移动DLC文件: dlc_wielton.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:25,161 - ui.MainWindow - INFO - 移动DLC文件: dlc_winter.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:10:26,094 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:10:26,095 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:10:26,098 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:10:26,625 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:10:26,628 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:10:59,954 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:10:59,955 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:10:59,955 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:11:00,936 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:11:00,940 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:11:01,884 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:11:01,884 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:11:01,884 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:11:02,278 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:11:02,281 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:11:02,497 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:11:02,497 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:11:02,497 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:13,134 - ui.MainWindow - INFO - 应用程序正在关闭...
+2025-11-27 17:15:20,011 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:20,027 - ui.MainWindow - INFO - 找到欧洲卡车模拟2安装路径: F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:20,028 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:20,029 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:20,031 - ui.MainWindow - INFO - 主窗口初始化完成
+2025-11-27 17:15:20,512 - ui.MainWindow - INFO - 窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)
+2025-11-27 17:15:23,010 - ui.MainWindow - INFO - 卸载选中的DLC
+2025-11-27 17:15:23,902 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,903 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,903 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,904 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,910 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,910 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,911 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,911 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,911 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,912 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:23,913 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs
+2025-11-27 17:15:24,677 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 85 个DLC文件
+2025-11-27 17:15:24,677 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:24,678 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 16 个已卸载的DLC文件
+2025-11-27 17:15:25,234 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:25,235 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:25,235 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中找到 16 个已卸载的DLC文件
+2025-11-27 17:15:27,711 - ui.MainWindow - INFO - 安装选中的DLC
+2025-11-27 17:15:28,309 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_e.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,309 - ui.MainWindow - INFO - 移动DLC文件: dlc_balkan_w.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,309 - ui.MainWindow - INFO - 移动DLC文件: dlc_balt.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,310 - ui.MainWindow - INFO - 移动DLC文件: dlc_christmas.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,310 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_2021.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,311 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_tuning_pack.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,311 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xd.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,311 - ui.MainWindow - INFO - 移动DLC文件: dlc_daf_xf_electric.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,312 - ui.MainWindow - INFO - 移动DLC文件: dlc_dragon.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,312 - ui.MainWindow - INFO - 移动DLC文件: dlc_east.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,312 - ui.MainWindow - INFO - 移动DLC文件: dlc_fantasy.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,313 - ui.MainWindow - INFO - 移动DLC文件: dlc_farm_machinery.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,313 - ui.MainWindow - INFO - 移动DLC文件: dlc_feldbinder.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,313 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_at.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,314 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_aus.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:28,314 - ui.MainWindow - INFO - 移动DLC文件: dlc_flags_be.scs -> F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2
+2025-11-27 17:15:29,147 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:29,147 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:29,148 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:29,634 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:15:30,141 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:30,141 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:30,141 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:30,433 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:30,434 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:31,335 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:31,336 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:31,570 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:31,571 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:31,571 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:31,800 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:15:32,057 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:32,058 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:32,395 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:32,395 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:32,395 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:32,695 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:32,696 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:33,217 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:33,217 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:33,218 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:33,479 - ui.MainWindow - INFO - 显示设置
+2025-11-27 17:15:33,882 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:33,882 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:33,883 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:34,283 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:34,284 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:35,200 - ui.MainWindow - INFO - 显示未安装DLC
+2025-11-27 17:15:35,200 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:35,201 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:36,431 - ui.MainWindow - INFO - 刷新未安装DLC列表
+2025-11-27 17:15:36,432 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2\temp_dlcs 中未找到DLC文件
+2025-11-27 17:15:36,861 - ui.MainWindow - INFO - 显示已安装DLC
+2025-11-27 17:15:36,862 - ui.MainWindow - INFO - 在 F:\SteamLibrary\steamapps\common\Euro Truck Simulator 2 中找到 101 个DLC文件
+2025-11-27 17:15:37,696 - ui.MainWindow - INFO - 应用程序正在关闭...

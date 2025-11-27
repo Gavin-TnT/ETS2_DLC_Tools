@@ -34,7 +34,7 @@ class Config:
             "logging": {
                 "level": "INFO",
                 "file": "logs/app.log",
-                "max_size": 10485760,  # 10MB
+                "max_size": 1048576,   # 1MB
                 "backup_count": 5
             },
             "dlc": {
@@ -44,7 +44,7 @@ class Config:
                 "auto_backup": True
             },
             "ui": {
-                "theme": "default",
+                "theme": "light",
                 "language": "zh_CN",
                 "font_size": 12,
                 "show_toolbar": True,
@@ -198,6 +198,14 @@ class Config:
         self.set('window.y', geometry.get('y', 100))
         self.set('window.width', geometry.get('width', 1200))
         self.set('window.height', geometry.get('height', 800))
+    
+    def get_theme(self):
+        """获取主题设置"""
+        return self.get('ui.theme', 'light')
+    
+    def set_theme(self, theme):
+        """设置主题"""
+        return self.set('ui.theme', theme)
         self.set('window.maximized', geometry.get('maximized', False))
     
     def get_ui_theme(self):
