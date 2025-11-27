@@ -49,8 +49,14 @@ def main():
     # 初始化配置
     config = Config()
     
-    # 设置日志
-    setup_logging(config.get('logging.level', 'INFO'))
+    # 设置日志 - 使用配置文件中的日志设置
+    log_config = config.get('logging', {})
+    setup_logging(
+        level=log_config.get('level', 'INFO'),
+        log_file=log_config.get('file', 'logs/app.log'),
+        max_size=log_config.get('max_size', 10485760),
+        backup_count=log_config.get('backup_count', 5)
+    )
     
     try:
         # 创建并显示主窗口

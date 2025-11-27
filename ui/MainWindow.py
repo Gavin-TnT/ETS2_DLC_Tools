@@ -447,13 +447,10 @@ class MainWindow(QMainWindow):
         
         settings_layout.addLayout(game_path_layout)
         
+        # 主题设置已移除
+        
         layout.addWidget(settings_group)
         layout.addStretch()
-        
-        # 保存按钮
-        save_btn = QPushButton("保存设置")
-        save_btn.clicked.connect(self.save_settings)
-        layout.addWidget(save_btn)
         
         return page
     
@@ -483,7 +480,7 @@ class MainWindow(QMainWindow):
         pass  # 移除状态栏
     
     def apply_styles(self):
-        """应用样式 - 响应式分栏布局样式"""
+        """应用默认样式"""
         self.setStyleSheet("""
             /* 主窗口样式 */
             QMainWindow {
@@ -520,7 +517,7 @@ class MainWindow(QMainWindow):
                 color: #495057;
                 font-size: 14px;
                 text-align: left;
-                padding: 15px 20;
+                padding: 15px 20px;
                 margin: 0px;
                 border-radius: 0px;
                 width: 100%;
@@ -594,6 +591,7 @@ class MainWindow(QMainWindow):
                 background-color: #ffffff;
                 font-family: 'Consolas', 'Monaco', monospace;
                 font-size: 13px;
+                color: #212529;
             }
             
             /* 页面操作按钮区域 */
@@ -630,11 +628,18 @@ class MainWindow(QMainWindow):
                 padding: 8px 12px;
                 font-size: 14px;
                 background-color: #ffffff;
+                color: #495057;
             }
             
             QLineEdit:focus {
                 border-color: #80bdff;
                 outline: none;
+            }
+            
+            /* 标签样式 */
+            QLabel {
+                color: #212529;
+                font-size: 14px;
             }
         """)
     
@@ -712,20 +717,22 @@ class MainWindow(QMainWindow):
         """浏览欧洲卡车模拟2游戏路径"""
         self.logger.info("浏览欧洲卡车模拟2游戏路径")
         
-        # 获取当前路径
+        # 获取当前路径作为初始目录
         current_path = self.game_path_input.text()
+        initial_dir = current_path if current_path and os.path.exists(current_path) else "C:\\"
         
-        # 如果当前路径存在，打开该文件夹；否则打开默认路径
-        if current_path and os.path.exists(current_path):
-            os.startfile(current_path)
-        else:
-            # 打开默认的Steam游戏目录
-            default_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common"
-            if os.path.exists(default_path):
-                os.startfile(default_path)
-            else:
-                # 如果默认路径不存在，打开我的电脑
-                os.startfile("::{20D04FE0-3AEA-1069-A2D8-08002B30309D}")
+        # 打开文件夹选择对话框
+        directory = QFileDialog.getExistingDirectory(
+            self,
+            "选择欧洲卡车模拟2安装目录",
+            initial_dir,
+            QFileDialog.Option.ShowDirsOnly | QFileDialog.Option.DontResolveSymlinks
+        )
+        
+        # 如果用户选择了目录，更新输入框
+        if directory:
+            self.game_path_input.setText(directory)
+            self.logger.info(f"用户选择了游戏路径: {directory}")
     
     def save_settings(self):
         """保存设置"""
