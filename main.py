@@ -44,7 +44,17 @@ def main():
     # 设置应用程序图标（如果存在）
     icon_path = project_root / "resources" / "icon.ico"
     if icon_path.exists():
-        app.setWindowIcon(QIcon(str(icon_path)))
+        try:
+            app_icon = QIcon(str(icon_path))
+            if not app_icon.isNull():
+                app.setWindowIcon(app_icon)
+                print(f"应用程序图标设置成功: {icon_path}")
+            else:
+                print(f"警告: 图标文件无效: {icon_path}")
+        except Exception as e:
+            print(f"设置应用程序图标失败: {e}")
+    else:
+        print(f"警告: 图标文件不存在: {icon_path}")
     
     # 初始化配置
     config = Config()

@@ -1,0 +1,69 @@
+{
+  "app_title": "ETS2 DLC Tools",
+  "nav": {
+    "installed_dlc": "已安装",
+    "uninstalled_dlc": "未安装",
+    "settings": "设置"
+  },
+  "settings": {
+    "title": "设置选项",
+    "game_path": "游戏路径:",
+    "browse": "浏览...",
+    "language": "界面语言:",
+    "open_logs": "📁 打开日志文件夹",
+    "logs_info": "💡 日志文件位于 logs 文件夹中，包含程序运行的详细信息",
+    "github_repo": "🌟 GitHub 仓库",
+    "game_path_not_found": "未找到游戏安装路径"
+  },
+  "installed": {
+    "title": "已安装的DLC",
+    "subtitle": "以下是在您的游戏中已安装的DLC列表",
+    "features": "功能说明:\n• 显示所有已安装的DLC文件\n• 显示文件大小和修改日期\n• 支持一键备份选中的DLC\n• 支持一键卸载选中的DLC",
+    "total_files": "总计 {} 个DLC文件",
+    "backup_selected": "备份选中",
+    "uninstall_selected": "卸载选中",
+    "uninstall_all": "卸载所有",
+    "confirm_uninstall_all": "确定要卸载 {} 个DLC文件吗？\n文件将被移动到: {}",
+    "confirm_uninstall_selected": "确定要卸载 {} 个选中的DLC文件吗？\n文件将被移动到 {} 文件夹",
+    "uninstall_success": "已成功卸载 {} 个DLC文件",
+    "no_files_moved": "没有文件被移动",
+    "no_files_moved_detail": "没有文件被移动，可能目标位置已存在相同文件或源文件不存在",
+    "select_dlc_first": "请先选择要卸载的DLC文件",
+    "no_valid_dlc": "未找到有效的DLC文件",
+    "uninstall_error": "卸载DLC时出错"
+  },
+  "uninstalled": {
+    "title": "未安装的DLC",
+    "subtitle": "以下是可以安装到您的游戏中的DLC列表",
+    "features": "功能说明:\n• 显示所有可安装的DLC文件\n• 显示文件大小和修改日期\n• 支持一键安装选中的DLC\n• 支持一键备份游戏文件",
+    "no_files": "未找到可安装的DLC文件",
+    "install_selected": "安装选中",
+    "install_all": "安装所有",
+    "refresh_list": "刷新列表",
+    "backup_game": "备份游戏",
+    "game_path_not_found": "未找到游戏安装路径",
+    "temp_dlcs_not_found": "未找到temp_dlcs文件夹，没有可安装的DLC",
+    "select_dlc_first": "请先选择要安装的DLC文件",
+    "no_valid_dlc": "未找到有效的DLC文件",
+    "confirm_install_selected": "确定要安装 {} 个选中的DLC文件吗？\n文件将从 {} 移回游戏安装路径",
+    "confirm_install_all": "确定要安装所有 {} 个DLC文件吗？\n文件将从 {} 移回游戏安装路径",
+    "install_success": "已成功安装 {} 个DLC文件",
+    "no_files_moved": "没有文件被移动",
+    "no_files_moved_detail": "没有文件被移动，可能目标位置已存在相同文件或源文件不存在",
+    "install_error": "安装DLC时出错"
+  },
+  "common": {
+    "total": "总计",
+    "files": "文件",
+    "select_all": "全选",
+    "deselect_all": "取消全选",
+    "refresh": "刷新",
+    "confirm": "确认",
+    "cancel": "取消",
+    "close": "关闭",
+    "error": "错误",
+    "success": "成功",
+    "warning": "警告",
+    "info": "信息"
+  }
+}

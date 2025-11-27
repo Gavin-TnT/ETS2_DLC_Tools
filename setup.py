@@ -23,7 +23,8 @@ include_files = [
     "dlcs_info.json",        # DLC数据文件 - 必需
     "ui/",                   # 界面文件 - 必需
     "logs/",                 # 日志目录 - 必需
-    "resources/"             # 资源文件（图标等）- 必需
+    "resources/",            # 资源文件（图标等）- 必需
+    "language/"              # 语言文件 - 必需（用于多语言支持）
 ]
 
 # 需要包含的Python包
