@@ -4,22 +4,303 @@
 基于QtPy5的主窗口实现
 """
 
-from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
+from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QMenuBar, QStatusBar, QToolBar, QDockWidget,
                              QTextEdit, QPushButton, QLabel, QLineEdit,
                              QTreeWidget, QTreeWidgetItem, QSplitter,
                              QMessageBox, QFileDialog, QApplication, QToolButton,
                              QFrame, QScrollArea, QGraphicsDropShadowEffect, QSizePolicy,
-                             QListWidget, QListWidgetItem, QComboBox)
-from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QSize, QUrl
-from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap, QDesktopServices
+                             QListWidget, QListWidgetItem, QComboBox, QScrollBar)
+from PyQt6.QtCore import (Qt, QTimer, pyqtSignal, QThread, QSize, QUrl,
+                          QPropertyAnimation, QEasingCurve, pyqtProperty)
+from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QPixmap, QDesktopServices, QWheelEvent
 
 import os
 import sys
 import logging
 import shutil
+import json
 from pathlib import Path
 from language_manager import get_language_manager, tr
+
+
+class AnimatedListItem(QListWidgetItem):
+    """支持动画效果的列表项"""
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._scale = 1.0
+        self._opacity = 1.0
+
+
+class SmoothScrollListWidget(QListWidget):
+    """支持平滑滚动和动画效果的QListWidget"""
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._target_value = 0
+        self._animation = QPropertyAnimation(self.verticalScrollBar(), b"value")
+        self._animation.setEasingCurve(QEasingCurve.Type.OutCubic)
+        self._animation.setDuration(300)  # 300ms动画时长
+        
+        # 悬停动画相关
+        self._hover_item = None
+        self._hover_timer = QTimer()
+        self._hover_timer.timeout.connect(self._on_hover_animation)
+        self._hover_timer.setInterval(16)  # 60fps
+        self._hover_progress = 0.0
+        
+        # 点击动画相关
+        self._click_item = None
+        self._click_timer = QTimer()
+        self._click_timer.timeout.connect(self._on_click_animation)
+        self._click_timer.setInterval(16)
+        self._click_progress = 0.0
+        self._click_phase = 0  # 0: 缩小, 1: 放大
+        
+        # 防止拖动多选
+        self._last_pressed_item = None
+        self._is_mouse_pressed = False
+        
+        # 设置滚动模式
+        self.setVerticalScrollMode(QListWidget.ScrollMode.ScrollPerPixel)
+        self.setHorizontalScrollMode(QListWidget.ScrollMode.ScrollPerPixel)
+        
+        # 启用鼠标追踪以实现悬停效果
+        self.setMouseTracking(True)
+        self.viewport().setMouseTracking(True)
+    
+    def wheelEvent(self, event: QWheelEvent):
+        """重写鼠标滚轮事件，添加平滑滚动动画"""
+        scrollbar = self.verticalScrollBar()
+        delta = -event.angleDelta().y()
+        step = 120
+        scroll_amount = (delta / 120) * step
+        
+        current_value = scrollbar.value()
+        target_value = current_value + int(scroll_amount)
+        target_value = max(scrollbar.minimum(), min(scrollbar.maximum(), target_value))
+        
+        if self._animation.state() == QPropertyAnimation.State.Running:
+            self._animation.stop()
+        
+        self._animation.setStartValue(current_value)
+        self._animation.setEndValue(target_value)
+        self._animation.start()
+        
+        event.accept()
+    
+    def mousePressEvent(self, event):
+        """鼠标按下事件 - 实现点击切换选择"""
+        from PyQt6.QtCore import Qt
+        
+        # 只处理左键点击
+        if event.button() == Qt.MouseButton.LeftButton:
+            item = self.itemAt(event.pos())
+            if item:
+                # 记录按下的item和状态
+                self._last_pressed_item = item
+                self._is_mouse_pressed = True
+                
+                # 切换选择状态
+                item.setSelected(not item.isSelected())
+                
+                # 触发点击动画
+                self._click_item = item
+                self._click_progress = 0.0
+                self._click_phase = 0
+                if not self._click_timer.isActive():
+                    self._click_timer.start()
+                
+                # 不调用父类方法，避免默认的选择行为
+                event.accept()
+                return
+        
+        # 其他情况调用父类方法
+        super().mousePressEvent(event)
+    
+    def mouseReleaseEvent(self, event):
+        """鼠标释放事件 - 重置拖动状态"""
+        from PyQt6.QtCore import Qt
+        
+        if event.button() == Qt.MouseButton.LeftButton:
+            self._is_mouse_pressed = False
+            self._last_pressed_item = None
+        
+        super().mouseReleaseEvent(event)
+    
+    def mouseMoveEvent(self, event):
+        """鼠标移动事件 - 触发悬停动画，但防止拖动多选"""
+        # 如果鼠标正在按下，禁止触发任何选择行为
+        if self._is_mouse_pressed:
+            # 只更新悬停效果，不触发选择
+            item = self.itemAt(event.pos())
+            if item != self._hover_item:
+                if self._hover_timer.isActive():
+                    self._hover_timer.stop()
+                self._hover_item = item
+                if item:
+                    self._hover_progress = 0.0
+                    self._hover_timer.start()
+            # 不调用父类方法，完全禁止拖动选择
+            event.accept()
+            return
+        
+        # 正常的悬停处理
+        super().mouseMoveEvent(event)
+        item = self.itemAt(event.pos())
+        
+        if item != self._hover_item:
+            # 停止之前的悬停动画
+            if self._hover_timer.isActive():
+                self._hover_timer.stop()
+            
+            self._hover_item = item
+            if item:
+                # 开始新的悬停动画
+                self._hover_progress = 0.0
+                self._hover_timer.start()
+    
+    def leaveEvent(self, event):
+        """鼠标离开事件 - 停止悬停动画"""
+        super().leaveEvent(event)
+        if self._hover_timer.isActive():
+            self._hover_timer.stop()
+        self._hover_item = None
+        self.viewport().update()
+    
+    def _on_hover_animation(self):
+        """悬停动画帧更新"""
+        self._hover_progress += 0.1
+        if self._hover_progress >= 1.0:
+            self._hover_progress = 1.0
+            self._hover_timer.stop()
+        
+        # 触发重绘
+        if self._hover_item:
+            rect = self.visualItemRect(self._hover_item)
+            self.viewport().update(rect)
+    
+    
+    def _on_click_animation(self):
+        """点击动画帧更新"""
+        self._click_progress += 0.15
+        
+        if self._click_phase == 0:  # 缩小阶段
+            if self._click_progress >= 1.0:
+                self._click_progress = 0.0
+                self._click_phase = 1
+        else:  # 放大阶段
+            if self._click_progress >= 1.0:
+                self._click_progress = 1.0
+                self._click_timer.stop()
+                self._click_item = None
+        
+        # 触发重绘
+        if self._click_item:
+            rect = self.visualItemRect(self._click_item)
+            self.viewport().update(rect)
+    
+    def paintEvent(self, event):
+        """重写绘制事件以应用动画效果"""
+        super().paintEvent(event)
+        
+        from PyQt6.QtGui import QPainter, QColor, QPen
+        
+        # 绘制悬停动画效果
+        if self._hover_item and self._hover_progress > 0:
+            try:
+                rect = self.visualItemRect(self._hover_item)
+                if not rect.isValid():
+                    return
+                
+                painter = QPainter(self.viewport())
+                try:
+                    painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+                    
+                    # 计算动画参数（使用缓动函数）
+                    progress = self._ease_out_cubic(self._hover_progress)
+                    
+                    # 动态圆角半径：从12px增大到18px
+                    radius = 12 + int(6 * progress)
+                    
+                    # 绘制外发光效果（多层）
+                    for i in range(3):
+                        offset = int((3 - i) * 2 * progress)
+                        glow_rect = rect.adjusted(-offset, -offset, offset, offset)
+                        glow_alpha = int(30 * progress * (1 - i * 0.3))
+                        glow_color = QColor(3, 102, 214, glow_alpha)
+                        painter.setPen(Qt.PenStyle.NoPen)
+                        painter.setBrush(glow_color)
+                        painter.drawRoundedRect(glow_rect, radius + offset, radius + offset)
+                    
+                    # 绘制圆角遮罩层（半透明蓝色覆盖）
+                    overlay_color = QColor(230, 242, 255, int(50 * progress))
+                    painter.setBrush(overlay_color)
+                    painter.setPen(Qt.PenStyle.NoPen)
+                    painter.drawRoundedRect(rect, radius, radius)
+                    
+                    # 绘制圆角边框
+                    border_pen = QPen(QColor(9, 105, 218, int(255 * progress)))
+                    border_pen.setWidth(int(3 * progress))
+                    painter.setPen(border_pen)
+                    painter.setBrush(Qt.BrushStyle.NoBrush)
+                    painter.drawRoundedRect(rect.adjusted(1, 1, -1, -1), radius, radius)
+                    
+                finally:
+                    painter.end()
+            except Exception as e:
+                pass  # 静默处理绘制错误
+        
+        # 绘制点击动画效果
+        if self._click_item and self._click_timer.isActive():
+            try:
+                rect = self.visualItemRect(self._click_item)
+                if not rect.isValid():
+                    return
+                
+                painter = QPainter(self.viewport())
+                try:
+                    painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+                    
+                    if self._click_phase == 0:  # 缩小阶段
+                        progress = self._ease_in_cubic(self._click_progress)
+                        scale = 1.0 - 0.05 * progress
+                    else:  # 放大阶段
+                        progress = self._ease_out_elastic(self._click_progress)
+                        scale = 0.95 + 0.05 * progress
+                    
+                    # 绘制脉冲波纹效果
+                    if self._click_phase == 1:
+                        ripple_alpha = int(100 * (1 - self._click_progress))
+                        ripple_color = QColor(33, 136, 255, ripple_alpha)
+                        painter.setPen(Qt.PenStyle.NoPen)
+                        painter.setBrush(ripple_color)
+                        
+                        ripple_size = int(20 * self._click_progress)
+                        ripple_rect = rect.adjusted(-ripple_size, -ripple_size, ripple_size, ripple_size)
+                        painter.drawRoundedRect(ripple_rect, 12, 12)
+                finally:
+                    painter.end()
+            except Exception as e:
+                pass  # 静默处理绘制错误
+    
+    def _ease_out_cubic(self, t):
+        """三次缓动函数（减速）"""
+        return 1 - pow(1 - t, 3)
+    
+    def _ease_in_cubic(self, t):
+        """三次缓动函数（加速）"""
+        return t * t * t
+    
+    def _ease_out_elastic(self, t):
+        """弹性缓动函数"""
+        import math
+        if t == 0 or t == 1:
+            return t
+        
+        p = 0.3
+        s = p / 4
+        return pow(2, -10 * t) * math.sin((t - s) * (2 * math.pi) / p) + 1
 
 
 class MainWindow(QMainWindow):
@@ -36,6 +317,13 @@ class MainWindow(QMainWindow):
         
         # 初始化游戏路径 - 只通过自动检测获取，不从配置读取
         self.game_path = self.find_ets2_installation_path()
+        
+        # 加载DLC信息数据
+        self.dlcs_info = self.load_dlcs_info()
+        
+        # 使用本地图片
+        # self.network_manager = QNetworkAccessManager()
+        self.image_cache = {}  # 缓存已加载的本地图片
         
         # 加载保存的语言设置
         saved_language = self.config.get('ui.language', 'zh_CN')
@@ -57,11 +345,43 @@ class MainWindow(QMainWindow):
         
         self.logger.info("主窗口初始化完成")
     
+    def load_dlcs_info(self):
+        """加载DLC信息数据从dlcs_info.json"""
+        try:
+            # 检测是否在打包环境中运行
+            if getattr(sys, 'frozen', False):
+                base_path = Path(sys.executable).parent
+            else:
+                base_path = Path(__file__).parent.parent
+            
+            dlcs_info_path = base_path / "dlcs_info.json"
+            
+            if dlcs_info_path.exists():
+                with open(dlcs_info_path, 'r', encoding='utf-8') as f:
+                    dlcs_info = json.load(f)
+                    self.logger.info(f"成功加载 {len(dlcs_info)} 个DLC信息")
+                    return dlcs_info
+            else:
+                self.logger.warning(f"DLC信息文件不存在: {dlcs_info_path}")
+                return []
+        except Exception as e:
+            self.logger.error(f"加载DLC信息失败: {e}")
+            return []
+    
+    def find_dlc_info_by_file(self, filename):
+        """根据文件名查找DLC信息"""
+        filename_lower = filename.lower()
+        for dlc in self.dlcs_info:
+            for file in dlc.get('files', []):
+                if file.lower() == filename_lower:
+                    return dlc
+        return None
+    
     def init_ui(self):
-        """初始化用户界面 - 固定尺寸800x600，禁止用户缩放"""
+        """初始化用户界面 - 固定尺寸1000x700，禁止用户缩放"""
         # 设置窗口属性
         self.setWindowTitle(tr('app_title'))
-        self.setFixedSize(800, 600)  # 设置固定尺寸800x600，禁止用户缩放
+        self.setFixedSize(1000, 700)  # 设置固定尺寸1000x700，适应网格布局
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowType.WindowMaximizeButtonHint)  # 禁用最大化按钮
         
         # 设置窗口图标
@@ -262,7 +582,7 @@ class MainWindow(QMainWindow):
         self.content_stack = QWidget()
         self.content_stack.setObjectName("content_stack")
         self.stack_layout = QVBoxLayout(self.content_stack)
-        self.stack_layout.setContentsMargins(20, 20, 20, 20)
+        self.stack_layout.setContentsMargins(5, 10, 5, 10)
         
         # 创建不同内容的页面
         self.create_content_pages()
@@ -492,10 +812,75 @@ class MainWindow(QMainWindow):
         
         layout.addWidget(header)
         
-        # DLC文件列表 - 使用QListWidget
-        dlc_list = QListWidget()
+        # 搜索框
+        search_widget = QWidget()
+        search_layout = QHBoxLayout(search_widget)
+        search_layout.setContentsMargins(0, 10, 0, 10)
+        
+        search_label = QLabel("🔍")
+        search_label.setStyleSheet("font-size: 16px;")
+        search_layout.addWidget(search_label)
+        
+        self.search_input = QLineEdit()
+        self.search_input.setPlaceholderText("搜索DLC名称...")
+        self.search_input.setClearButtonEnabled(True)
+        self.search_input.textChanged.connect(self.filter_installed_dlc)
+        self.search_input.setStyleSheet("""
+            QLineEdit {
+                border: 2px solid #e1e4e8;
+                border-radius: 8px;
+                padding: 8px 12px;
+                font-size: 13px;
+                background-color: #ffffff;
+                color: #24292e;
+            }
+            QLineEdit:focus {
+                border-color: #2196f3;
+                background-color: #f8f9fa;
+            }
+            QLineEdit:hover {
+                border-color: #0366d6;
+            }
+        """)
+        search_layout.addWidget(self.search_input)
+        layout.addWidget(search_widget)
+        
+        # 选择信息提示栏
+        self.selection_info = QLabel()
+        self.selection_info.setObjectName("selection_info")
+        self.selection_info.setVisible(False)
+        self.selection_info.setWordWrap(True)
+        self.selection_info.setStyleSheet("""
+            QLabel#selection_info {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #e3f2fd, stop:1 #bbdefb);
+                border: 2px solid #2196f3;
+                border-radius: 8px;
+                padding: 12px 16px;
+                margin: 10px 0;
+                color: #1565c0;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        """)
+        layout.addWidget(self.selection_info)
+        
+        # DLC文件列表 - 使用平滑滚动的QListWidget，设置为网格模式
+        dlc_list = SmoothScrollListWidget()
         dlc_list.setObjectName("installed_dlc_list")
-        dlc_list.setSelectionMode(QListWidget.SelectionMode.ExtendedSelection)  # 允许多选
+        dlc_list.setSelectionMode(QListWidget.SelectionMode.MultiSelection)  # 多选模式（不需要Ctrl/Shift）
+        dlc_list.setViewMode(QListWidget.ViewMode.IconMode)  # 图标模式（网格布局）
+        dlc_list.setIconSize(QSize(240, 120))  # 图标尺寸240x120
+        dlc_list.setGridSize(QSize(255, 175))  # 网格255x175，继续缩小
+        dlc_list.setResizeMode(QListWidget.ResizeMode.Adjust)  # 自动调整
+        dlc_list.setMovement(QListWidget.Movement.Static)  # 禁止拖动
+        dlc_list.setSpacing(2)  # 最小间距2px
+        dlc_list.setWordWrap(True)  # 文本换行
+        dlc_list.setUniformItemSizes(True)  # 统一项目尺寸
+        
+        # 连接选择变化事件
+        dlc_list.itemSelectionChanged.connect(self.on_dlc_selection_changed)
+        
         layout.addWidget(dlc_list)
         
         # 保存列表引用，用于后续更新
@@ -549,10 +934,75 @@ class MainWindow(QMainWindow):
         
         layout.addWidget(header)
         
-        # DLC文件列表 - 使用QListWidget
-        dlc_list = QListWidget()
-        dlc_list.setObjectName("dlc_list")
-        dlc_list.setSelectionMode(QListWidget.SelectionMode.ExtendedSelection)  # 允许多选
+        # 搜索框
+        search_widget = QWidget()
+        search_layout = QHBoxLayout(search_widget)
+        search_layout.setContentsMargins(0, 10, 0, 10)
+        
+        search_label = QLabel("🔍")
+        search_label.setStyleSheet("font-size: 16px;")
+        search_layout.addWidget(search_label)
+        
+        self.uninstalled_search_input = QLineEdit()
+        self.uninstalled_search_input.setPlaceholderText("搜索DLC名称...")
+        self.uninstalled_search_input.setClearButtonEnabled(True)
+        self.uninstalled_search_input.textChanged.connect(self.filter_uninstalled_dlc)
+        self.uninstalled_search_input.setStyleSheet("""
+            QLineEdit {
+                border: 2px solid #e1e4e8;
+                border-radius: 8px;
+                padding: 8px 12px;
+                font-size: 13px;
+                background-color: #ffffff;
+                color: #24292e;
+            }
+            QLineEdit:focus {
+                border-color: #2196f3;
+                background-color: #f8f9fa;
+            }
+            QLineEdit:hover {
+                border-color: #0366d6;
+            }
+        """)
+        search_layout.addWidget(self.uninstalled_search_input)
+        layout.addWidget(search_widget)
+        
+        # 选择信息提示栏
+        self.uninstalled_selection_info = QLabel()
+        self.uninstalled_selection_info.setObjectName("uninstalled_selection_info")
+        self.uninstalled_selection_info.setVisible(False)
+        self.uninstalled_selection_info.setWordWrap(True)
+        self.uninstalled_selection_info.setStyleSheet("""
+            QLabel#uninstalled_selection_info {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #e8f5e9, stop:1 #c8e6c9);
+                border: none;
+                border-radius: 8px;
+                padding: 12px 16px;
+                margin: 10px 0;
+                color: #2e7d32;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        """)
+        layout.addWidget(self.uninstalled_selection_info)
+        
+        # DLC文件列表 - 使用网格模式，与已安装页面一致
+        dlc_list = SmoothScrollListWidget()
+        dlc_list.setObjectName("uninstalled_dlc_list")
+        dlc_list.setSelectionMode(QListWidget.SelectionMode.MultiSelection)  # 多选模式
+        dlc_list.setViewMode(QListWidget.ViewMode.IconMode)  # 图标模式（网格布局）
+        dlc_list.setIconSize(QSize(240, 120))  # 图标尺寸240x120
+        dlc_list.setGridSize(QSize(255, 175))  # 网格255x175
+        dlc_list.setResizeMode(QListWidget.ResizeMode.Adjust)  # 自动调整
+        dlc_list.setMovement(QListWidget.Movement.Static)  # 禁止拖动
+        dlc_list.setSpacing(2)  # 最小间距2px
+        dlc_list.setWordWrap(True)  # 文本换行
+        dlc_list.setUniformItemSizes(True)  # 统一项目尺寸
+        
+        # 连接选择变化事件
+        dlc_list.itemSelectionChanged.connect(self.on_uninstalled_dlc_selection_changed)
+        
         layout.addWidget(dlc_list)
         
         # 保存列表引用，用于后续更新
@@ -565,10 +1015,12 @@ class MainWindow(QMainWindow):
         
         self.install_selected_btn = QPushButton(tr('uninstalled.install_selected'))
         self.install_selected_btn.clicked.connect(self.install_selected_dlc)
+        self.install_selected_btn.setVisible(False)
         actions_layout.addWidget(self.install_selected_btn)
         
         self.install_all_btn = QPushButton(tr('uninstalled.install_all'))
         self.install_all_btn.clicked.connect(self.install_all_dlcs)
+        self.install_all_btn.setVisible(False)
         actions_layout.addWidget(self.install_all_btn)
         
         actions_layout.addStretch()
@@ -1111,6 +1563,112 @@ class MainWindow(QMainWindow):
                 color: #212529;
                 font-size: 14px;
             }
+            
+            /* DLC列表样式 - 网格视图，现代化交互效果 */
+            QListWidget#installed_dlc_list {
+                background-color: #f8f9fa;
+                border: none;
+                outline: none;
+                padding: 5px;
+            }
+            
+            /* 默认状态 - 白色卡片，细边框 */
+            QListWidget#installed_dlc_list::item {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #ffffff, stop:1 #fafbfc);
+                border: 2px solid #e1e4e8;
+                border-radius: 12px;
+                padding: 8px;
+                margin: 3px;
+                text-align: center;
+                color: #24292e;
+                font-weight: 500;
+            }
+            
+            /* 悬停效果 - 移除边框，完全由paintEvent绘制 */
+            QListWidget#installed_dlc_list::item:hover {
+                background: transparent;
+                border: none;
+                color: #0366d6;
+                font-weight: 600;
+            }
+            
+            /* 选中状态 - 渐变蓝色背景 + 发光边框 + 白色文字 */
+            QListWidget#installed_dlc_list::item:selected {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #2188ff, stop:0.5 #0366d6, stop:1 #005cc5);
+                border: 3px solid #79b8ff;
+                border-radius: 12px;
+                color: #ffffff;
+                font-weight: 700;
+            }
+            
+            /* 选中且悬停 - 更亮的蓝色渐变 */
+            QListWidget#installed_dlc_list::item:selected:hover {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #54a3ff, stop:0.5 #2188ff, stop:1 #0366d6);
+                border: 3px solid #c8e1ff;
+                border-radius: 12px;
+            }
+            
+            /* 焦点状态 - 外发光效果 */
+            QListWidget#installed_dlc_list::item:focus {
+                border: 3px solid #79b8ff;
+                outline: none;
+            }
+            
+            /* 未安装DLC列表样式 - 与已安装列表一致，使用绿色主题 */
+            QListWidget#uninstalled_dlc_list {
+                background-color: #f8f9fa;
+                border: none;
+                outline: none;
+                padding: 5px;
+            }
+            
+            /* 默认状态 - 白色卡片，细边框 */
+            QListWidget#uninstalled_dlc_list::item {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #ffffff, stop:1 #fafbfc);
+                border: 2px solid #e1e4e8;
+                border-radius: 12px;
+                padding: 8px;
+                margin: 3px;
+                text-align: center;
+                color: #24292e;
+                font-weight: 500;
+            }
+            
+            /* 悬停效果 - 绿色文字 */
+            QListWidget#uninstalled_dlc_list::item:hover {
+                background: transparent;
+                border: none;
+                color: #2e7d32;
+                font-weight: 600;
+            }
+            
+            /* 选中状态 - 渐变绿色背景 + 发光边框 + 白色文字 */
+            QListWidget#uninstalled_dlc_list::item:selected {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #66bb6a, stop:0.5 #4caf50, stop:1 #43a047);
+                border: 3px solid #a5d6a7;
+                border-radius: 12px;
+                color: #ffffff;
+                font-weight: 700;
+            }
+            
+            /* 选中且悬停 - 更亮的绿色渐变 */
+            QListWidget#uninstalled_dlc_list::item:selected:hover {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #81c784, stop:0.5 #66bb6a, stop:1 #4caf50);
+                border: 3px solid #c8e6c9;
+                border-radius: 12px;
+            }
+            
+            /* 焦点状态 - 外发光效果 */
+            QListWidget#uninstalled_dlc_list::item:focus {
+                border: 3px solid #a5d6a7;
+                outline: none;
+            }
         """)
     
     # 事件处理方法
@@ -1176,14 +1734,14 @@ class MainWindow(QMainWindow):
         self.check_and_display_dlcs()
     
     def check_and_display_dlcs(self):
-        """检查DLC文件并显示相应信息"""
+        """检查DLC文件并显示相应信息（带图片）"""
         try:
             # 优先从设置界面的输入框获取路径，若为空则尝试从config读取
             game_path = self.game_path_input.text().strip() if hasattr(self, 'game_path_input') and self.game_path_input.text().strip() else (
                 self.config.get('dlc', {}).get('game_path', '') if hasattr(self.config, 'get') else self.config.get("game_path", "")
             )
             if not game_path or not os.path.exists(game_path):
-                self.installed_page.content_area.setPlainText(tr('settings.game_path_not_found'))
+                self.installed_page.dlc_list.clear()
                 self.uninstall_all_btn.setVisible(False)
                 return
             
@@ -1199,8 +1757,24 @@ class MainWindow(QMainWindow):
             if dlc_files:
                 # 按名称排序并添加到列表
                 for file in sorted(dlc_files):
-                    item = QListWidgetItem(file)
-                    item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名到item数据中
+                    # 查找对应的DLC信息
+                    dlc_info = self.find_dlc_info_by_file(file)
+                    
+                    if dlc_info:
+                        # 如果找到DLC信息，只显示DLC名称
+                        display_text = dlc_info.get('name', file)
+                        item = QListWidgetItem(display_text)
+                        item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名
+                        item.setToolTip(f"{dlc_info.get('name', file)}\n文件: {file}")  # 悬停提示显示完整信息
+                        
+                        # 从本地加载图标
+                        self.load_image_for_item(item, dlc_info)
+                    else:
+                        # 如果没有找到DLC信息，只显示文件名
+                        item = QListWidgetItem(file)
+                        item.setData(Qt.ItemDataRole.UserRole, file)
+                        item.setToolTip(file)
+                    
                     self.installed_page.dlc_list.addItem(item)
                 
                 self.uninstall_selected_btn.setVisible(True)
@@ -1209,7 +1783,7 @@ class MainWindow(QMainWindow):
             else:
                 # 未找到DLC文件
                 item = QListWidgetItem(tr('uninstalled.no_files'))
-                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)  # 禁用该项
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)
                 self.installed_page.dlc_list.addItem(item)
                 self.uninstall_selected_btn.setVisible(False)
                 self.uninstall_all_btn.setVisible(False)
@@ -1223,6 +1797,51 @@ class MainWindow(QMainWindow):
             self.uninstall_selected_btn.setVisible(False)
             self.uninstall_all_btn.setVisible(False)
             self.logger.error(f"检查DLC文件时出错: {e}")
+    
+    def load_image_for_item(self, item, dlc_info):
+        """从本地加载DLC图片"""
+        # 获取DLC ID
+        dlc_id = dlc_info.get('dlc_id', 0)
+        if not dlc_id:
+            return
+        
+        # 检查内存缓存
+        cache_key = str(dlc_id)
+        if cache_key in self.image_cache:
+            pixmap = self.image_cache[cache_key]
+            if not pixmap.isNull():
+                # 使用IgnoreAspectRatio强制缩放到固定尺寸，确保所有图片大小一致
+                scaled_pixmap = pixmap.scaled(240, 120, Qt.AspectRatioMode.IgnoreAspectRatio, Qt.TransformationMode.SmoothTransformation)
+                item.setIcon(QIcon(scaled_pixmap))
+            return
+        
+        # 确定图片路径
+        if getattr(sys, 'frozen', False):
+            base_path = Path(sys.executable).parent
+        else:
+            base_path = Path(__file__).parent.parent
+        
+        image_path = base_path / "resources" / "dlc_images" / f"{dlc_id}.jpg"
+        
+        # 加载本地图片
+        if image_path.exists():
+            try:
+                pixmap = QPixmap(str(image_path))
+                if not pixmap.isNull():
+                    # 缓存到内存
+                    self.image_cache[cache_key] = pixmap
+                    
+                    # 使用IgnoreAspectRatio强制缩放到固定尺寸240x120，确保所有图片大小一致
+                    scaled_pixmap = pixmap.scaled(240, 120, Qt.AspectRatioMode.IgnoreAspectRatio, Qt.TransformationMode.SmoothTransformation)
+                    item.setIcon(QIcon(scaled_pixmap))
+                    
+                    self.logger.info(f"加载DLC图片成功: {dlc_info.get('name', '')} ({dlc_id})")
+                else:
+                    self.logger.warning(f"图片文件无效: {image_path}")
+            except Exception as e:
+                self.logger.error(f"加载图片时出错: {e}")
+        else:
+            self.logger.warning(f"图片文件不存在: {image_path}")
     
     def uninstall_all_dlcs(self):
         """卸载所有DLC"""
@@ -1375,7 +1994,7 @@ class MainWindow(QMainWindow):
         # 这里添加实际的禁用逻辑
     
     def refresh_uninstalled_dlc(self):
-        """刷新未安装DLC列表"""
+        """刷新未安装DLC列表 - 支持网格视图和图片显示"""
         self.logger.info("刷新未安装DLC列表")
         try:
             # 获取游戏路径
@@ -1384,12 +2003,16 @@ class MainWindow(QMainWindow):
             )
             if not game_path or not os.path.exists(game_path):
                 self.uninstalled_page.dlc_list.clear()
+                self.install_selected_btn.setVisible(False)
+                self.install_all_btn.setVisible(False)
                 return
             
             # 检查temp_dlcs文件夹
             temp_dir = os.path.join(game_path, "temp_dlcs")
             if not os.path.exists(temp_dir):
                 self.uninstalled_page.dlc_list.clear()
+                self.install_selected_btn.setVisible(False)
+                self.install_all_btn.setVisible(False)
                 return
             
             # 查找temp_dlcs文件夹中的DLC文件
@@ -1404,16 +2027,36 @@ class MainWindow(QMainWindow):
             if dlc_files:
                 # 按名称排序并添加到列表
                 for file in sorted(dlc_files):
-                    item = QListWidgetItem(file)
-                    item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名到item数据中
+                    # 查找对应的DLC信息
+                    dlc_info = self.find_dlc_info_by_file(file)
+                    
+                    if dlc_info:
+                        # 如果找到DLC信息，只显示DLC名称
+                        display_text = dlc_info.get('name', file)
+                        item = QListWidgetItem(display_text)
+                        item.setData(Qt.ItemDataRole.UserRole, file)  # 保存文件名
+                        item.setToolTip(f"{dlc_info.get('name', file)}\n文件: {file}")  # 悬停提示显示完整信息
+                        
+                        # 从本地加载图标
+                        self.load_image_for_item(item, dlc_info)
+                    else:
+                        # 如果没有找到DLC信息，只显示文件名
+                        item = QListWidgetItem(file)
+                        item.setData(Qt.ItemDataRole.UserRole, file)
+                        item.setToolTip(file)
+                    
                     self.uninstalled_page.dlc_list.addItem(item)
                 
+                self.install_selected_btn.setVisible(True)
+                self.install_all_btn.setVisible(True)
                 self.logger.info(f"在 {temp_dir} 中找到 {len(dlc_files)} 个已卸载的DLC文件")
             else:
                 # 未找到DLC文件
                 item = QListWidgetItem(tr('uninstalled.no_files'))
-                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)  # 禁用该项
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEnabled)
                 self.uninstalled_page.dlc_list.addItem(item)
+                self.install_selected_btn.setVisible(False)
+                self.install_all_btn.setVisible(False)
                 self.logger.info(f"在 {temp_dir} 中未找到DLC文件")
                 
         except Exception as e:
@@ -1421,6 +2064,8 @@ class MainWindow(QMainWindow):
             error_item = QListWidgetItem(f"检查已卸载DLC文件时出错: {str(e)}")
             error_item.setFlags(error_item.flags() & ~Qt.ItemFlag.ItemIsEnabled)
             self.uninstalled_page.dlc_list.addItem(error_item)
+            self.install_selected_btn.setVisible(False)
+            self.install_all_btn.setVisible(False)
             self.logger.error(f"检查已卸载DLC文件时出错: {e}")
     
     def install_selected_dlc(self):
@@ -1636,9 +2281,131 @@ class MainWindow(QMainWindow):
     
     def on_resize_complete(self):
         """窗口大小调整完成后的处理"""
-        # 窗口为固定尺寸800x600，无需调整布局
+        # 窗口为固定尺寸1000x700，无需调整布局
         # 左侧菜单宽度固定为160px
-        self.logger.info(f"窗口大小: 800x600(固定), 左侧菜单宽度: 160px(固定)")
+        self.logger.info(f"窗口大小: 1000x700(固定), 左侧菜单宽度: 160px(固定)")
+    
+    def filter_installed_dlc(self, search_text):
+        """根据搜索文本过滤DLC列表"""
+        try:
+            search_text = search_text.lower().strip()
+            
+            # 遍历所有项目
+            for i in range(self.installed_page.dlc_list.count()):
+                item = self.installed_page.dlc_list.item(i)
+                if item:
+                    # 获取DLC名称
+                    item_text = item.text().lower()
+                    
+                    # 判断是否匹配搜索文本
+                    if search_text == "" or search_text in item_text:
+                        item.setHidden(False)
+                    else:
+                        item.setHidden(True)
+            
+            self.logger.info(f"搜索DLC: {search_text}")
+            
+        except Exception as e:
+            self.logger.error(f"搜索DLC时出错: {e}")
+    
+    def on_dlc_selection_changed(self):
+        """DLC选择变化时更新信息提示栏"""
+        try:
+            selected_items = self.installed_page.dlc_list.selectedItems()
+            
+            if not selected_items:
+                # 没有选择任何DLC，隐藏提示栏
+                self.selection_info.setVisible(False)
+                return
+            
+            # 获取选中的DLC名称
+            selected_names = []
+            for item in selected_items:
+                # 优先使用显示文本（DLC名称），如果为空则使用文件名
+                display_text = item.text()
+                if display_text:
+                    selected_names.append(display_text)
+            
+            # 构建提示信息
+            count = len(selected_names)
+            if count <= 3:
+                # 3个以内，显示完整名称
+                names_text = "、".join(selected_names)
+                info_text = f"✓ 已选择 {count} 个DLC：{names_text}"
+            else:
+                # 超过3个，显示前3个+省略
+                names_text = "、".join(selected_names[:3])
+                info_text = f"✓ 已选择 {count} 个DLC：{names_text} 等..."
+            
+            # 更新并显示提示栏
+            self.selection_info.setText(info_text)
+            self.selection_info.setVisible(True)
+            
+            self.logger.info(f"选择了 {count} 个DLC")
+            
+        except Exception as e:
+            self.logger.error(f"更新选择信息时出错: {e}")
+    
+    def on_uninstalled_dlc_selection_changed(self):
+        """未安装DLC选择变化时更新信息提示栏"""
+        try:
+            selected_items = self.uninstalled_page.dlc_list.selectedItems()
+            
+            if not selected_items:
+                # 没有选择任何DLC，隐藏提示栏
+                self.uninstalled_selection_info.setVisible(False)
+                return
+            
+            # 获取选中的DLC名称
+            selected_names = []
+            for item in selected_items:
+                # 优先使用显示文本（DLC名称），如果为空则使用文件名
+                display_text = item.text()
+                if display_text:
+                    selected_names.append(display_text)
+            
+            # 构建提示信息
+            count = len(selected_names)
+            if count <= 3:
+                # 3个以内，显示完整名称
+                names_text = "、".join(selected_names)
+                info_text = f"✓ 已选择 {count} 个DLC：{names_text}"
+            else:
+                # 超过3个，显示前3个+省略
+                names_text = "、".join(selected_names[:3])
+                info_text = f"✓ 已选择 {count} 个DLC：{names_text} 等..."
+            
+            # 更新并显示提示栏
+            self.uninstalled_selection_info.setText(info_text)
+            self.uninstalled_selection_info.setVisible(True)
+            
+            self.logger.info(f"未安装页面选择了 {count} 个DLC")
+            
+        except Exception as e:
+            self.logger.error(f"更新未安装DLC选择信息时出错: {e}")
+    
+    def filter_uninstalled_dlc(self, search_text):
+        """根据搜索文本过滤未安装DLC列表"""
+        try:
+            search_text = search_text.lower().strip()
+            
+            # 遍历所有项目
+            for i in range(self.uninstalled_page.dlc_list.count()):
+                item = self.uninstalled_page.dlc_list.item(i)
+                if item:
+                    # 获取DLC名称
+                    item_text = item.text().lower()
+                    
+                    # 判断是否匹配搜索文本
+                    if search_text == "" or search_text in item_text:
+                        item.setHidden(False)
+                    else:
+                        item.setHidden(True)
+            
+            self.logger.info(f"搜索未安装DLC: {search_text}")
+            
+        except Exception as e:
+            self.logger.error(f"搜索未安装DLC时出错: {e}")
     
     def closeEvent(self, event):
         """关闭事件处理 - 简化版本"""
